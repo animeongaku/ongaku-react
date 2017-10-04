@@ -1,4 +1,4 @@
-export default openings = [
+const openings = [
     {
         "link" : "http://67.159.62.2/anime_ost/tokyo-ghoul-op-single-unravel/eepprhqwvp/01%20-%20unravel.mp3",
         "name" : "Tokyo Ghoul - Unravel",
@@ -487,9 +487,7 @@ export default openings = [
 
 ]
 
-
-endings = [
-    
+const endings = [
     {
         "link" : "http://lyricmp3skull.org/s363640c/file/boku-no-hero-academia-season-2-ed-ending/315567154.mp3",
         "name" : "Boku no Hero Academia S2 ED-1",
@@ -630,9 +628,7 @@ endings = [
 
 ]
 
-
-osts = [
-    
+const osts = [
     {
         "link" : "http://66.90.93.122/ost/death-note-original-soundtrack/fghgpcdtbm/04-l-s-theme.mp3",
         "name" : "L's Theme A",
@@ -1197,3 +1193,23 @@ osts = [
         "img"  : "https://s25.postimg.org/6w9n8n11r/Drops_of_Time.png"
     }
 ]
+
+const data = shuffle(openings, endings, osts)
+
+// The de-facto unbiased shuffle algorithm is the Fisher-Yates (aka Knuth) Shuffle (based on SE answer).
+function shuffle (array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    // While there remain elements to shuffle
+    while (0 !== currentIndex) {
+        // Pick a remaining element
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
+
+export default data
