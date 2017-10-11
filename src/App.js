@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import data from './data';
 import MenuItemInfo from './MenuItemInfo'
+import MenuItemPreferences from './MenuItemPreferences'
 
 class App extends Component {
   state = {
@@ -36,38 +37,7 @@ class App extends Component {
           src={this.state.src} ></audio>
         <div className="top-bar">
           <MenuItemInfo />
-          <div className="top-right">
-            <a  data-placement="left" data-container="body" data-placement="left" type="button" data-html="true" data-toggle="popover" data-trigger="click"><img className="preferences-button" title="Select Preferences" src="img/options.jpg"/></a>
-            <div id="popover-title">
-              Preferences
-            </div>
-            <div id="popover-body">
-              <div className="opening">
-                <div>Opening</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox"  checked className="cb-value cb-op" />
-                  <span className="round-btn"></span>
-                </div>
-              </div>
-              <div className="ending">
-                <div>Ending</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox"  checked className="cb-value cb-ed" />
-                  <span className="round-btn"></span>
-                </div>
-
-              </div>
-              <div className="ost">
-                <div>OST</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox"  checked className="cb-value cb-ost" />
-                  <span className="round-btn"></span>
-                </div>
-              </div>
-              <a className="github-button" href="https://github.com/anshumanv/ongaku" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Anshuman-Verma/ongaku on GitHub">Star</a>
-              <a className="github-button" href="https://github.com/anshumanv/ongaku/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Anshuman-Verma/ongaku on GitHub">Fork</a>
-            </div>
-          </div>
+          <MenuItemPreferences />
         </div>
 
         <div className="display-track">
