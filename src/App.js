@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import data from './data';
+import MenuItemInfo from './MenuItemInfo'
 
 class App extends Component {
   state = {
@@ -17,58 +18,7 @@ class App extends Component {
           ref={(a) => { this.audio = a }} 
           src={this.state.src} ></audio>
         <div className="top-bar">
-          <button className="btn" type="button" style={{backgroundImage: "url(img/info.png)"}}>
-            <span className="screenReader">Information</span>
-          </button>
-          <div id="top-left" className="top-left" >
-          <table className="table table-hover">
-            <thead>
-              <tr>
-                <th>Key</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>SPACE</strong></td>
-                <td>Pause / Play</td>
-              </tr>
-              <tr>
-                <td><strong>N</strong></td>
-                <td>Next Track</td>
-              </tr>
-              <tr>
-                <td><strong>R</strong></td>
-                <td>Play Again</td>
-              </tr>
-              <tr>
-                <td><strong>F</strong></td>
-                <td>Fullscreen</td>
-              </tr>
-              <tr>
-                <td><strong>L</strong></td>
-                <td>Last Track</td>
-              </tr>
-              <tr>
-                <td><strong>UP</strong></td>
-                <td>Volume +10%</td>
-              </tr>
-              <tr>
-                <td><strong>DOWN</strong></td>
-                <td>Volume -10%</td>
-              </tr>
-              <tr>
-                <td><strong>LEFT</strong></td>
-                <td>Seek -10s</td>
-              </tr>
-              <tr>
-                <td><strong>RIGHT</strong></td>
-                <td>Seek +10s</td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-
+          <MenuItemInfo />
           <div className="top-right">
             <a  data-placement="left" data-container="body" data-placement="left" type="button" data-html="true" data-toggle="popover" data-trigger="click"><img className="preferences-button" title="Select Preferences" src="img/options.jpg"/></a>
             <div id="popover-title">
