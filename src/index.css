@@ -279,3 +279,11 @@ overflow:hidden;
 .btn:focus {
   transform: scale(1.1);
 }
+
+.table thead {
+  background: #000;
+  color: #fff;
+}
+.table tr {
+  white-space: nowrap;
+}
