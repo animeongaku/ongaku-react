@@ -17,7 +17,9 @@ class App extends Component {
           ref={(a) => { this.audio = a }} 
           src={this.state.src} ></audio>
         <div className="top-bar">
-			    <img src="img/info.png" className="infoImg" />
+          <button className="btn" type="button" style={{backgroundImage: "url(img/info.png)"}}>
+            <span className="screenReader">Information</span>
+          </button>
           <div id="top-left" className="top-left" >
           <table className="table table-hover">
             <thead>

@@ -265,3 +265,16 @@ width:1px;
 height:1px;
 overflow:hidden;
 }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+  transition: transform .2s;
+}
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+}
