@@ -1,0 +1,12 @@
+.menuItem {
+    position: relative;
+}
+
+.menuDropdown {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
