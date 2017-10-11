@@ -4,18 +4,18 @@ import data from './data';
 
 class App extends Component {
   state = {
-    src: data[0].link
+    src: data[0].link,
+    bgImg: data[0].img
   }
   togglePlay = () => {
     this.audio[this.audio.paused ? 'play' : 'pause']();
 	}
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
         <audio 
           ref={(a) => { this.audio = a }} 
           src={this.state.src} ></audio>
-        <button type="button" onClick={this.togglePlay}>Play/pause</button>
         <div className="top-bar">
 			    <img src="img/info.png" className="infoImg" />
           <div id="top-left" className="top-left" >
