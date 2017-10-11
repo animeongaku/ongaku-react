@@ -119,7 +119,9 @@ class App extends Component {
         
           <div id="wrapper">
             <div id="player">
-              <button id="pButton" className="play" title="Toggle Play"></button>
+              <button id="pButton" type="button" className="play" onClick={this.togglePlay}>
+                <span className="screenReader">Toggle Play</span>
+              </button>
               <div id="timeline">
                 <div id="buffered-bar">
                   <div id="playhead"></div>
@@ -136,7 +138,6 @@ class App extends Component {
               <img src="img/go-fullscreen.png"/>
             </div>
           </div>
-
         </div>
       </div>
     );
