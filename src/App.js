@@ -6,11 +6,28 @@ import MenuItemInfo from './MenuItemInfo'
 class App extends Component {
   state = {
     src: data[0].link,
-    bgImg: data[0].img
+    bgImg: data[0].img,
+    isFullscreen: false
   }
   togglePlay = () => {
     this.audio[this.audio.paused ? 'play' : 'pause']();
-	}
+  }
+  toggleFullscreen = () => {
+    const { isFullscreen } = this.state
+    if (isFullscreen) {
+			if (document.exitFullscreen) document.exitFullscreen();
+			else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+			else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+			else if (document.msExitFullscreen) document.msExitFullscreen();
+		} else {
+			const e = document.documentElement;
+			if (e.requestFullscreen) e.requestFullscreen();
+			else if (e.webkitRequestFullscreen) e.webkitRequestFullscreen();
+			else if (e.mozRequestFullScreen) e.mozRequestFullScreen();
+			else if (e.msRequestFullscreen) e.msRequestFullscreen();
+    }
+    this.setState({isFullscreen: !isFullscreen})
+  }
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
@@ -86,9 +103,9 @@ class App extends Component {
             <div id="restart" title="Play Again">
               <img src="img/restart.png"/>
             </div>
-            <div id="fullscreen-button" title="Toggle Fullscreen">
-              <img src="img/go-fullscreen.png"/>
-            </div>
+            <button id="fullscreen-button" type="button" class="btn" onClick={this.toggleFullscreen} style={{backgroundImage: `url(${this.state.isFullscreen ? 'img/cancel-fullscreen.png' : 'img/go-fullscreen.png'})` }}>
+              <span className="screenReader">Toggle Fullscreen</span>
+            </button>
           </div>
         </div>
       </div>
