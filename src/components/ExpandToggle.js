@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import './MenuItem.css'
 
-export default class MenuItem extends Component {
+export default class ExpandToggle extends Component {
     state = {
         expanded: false
     }

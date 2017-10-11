@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import MenuItem from "./components/MenuItem";
+import ExpandToggle from "./components/ExpandToggle";
+import './MenuItem.css'
 
 export default class MenuItemInfo extends Component {
   render() {
     return (
-      <MenuItem>
+      <ExpandToggle>
         {(state, props) => (
           <div className="menuItem">
             <button
@@ -89,7 +90,7 @@ export default class MenuItemInfo extends Component {
             </div>
           </div>
         )}
-      </MenuItem>
+      </ExpandToggle>
     );
   }
 }
