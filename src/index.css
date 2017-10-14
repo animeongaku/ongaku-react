@@ -8,7 +8,8 @@ body {
 
 body {
   background-color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   overflow: hidden;
 }
 #root {
@@ -33,10 +34,10 @@ img:hover {
 }
 
 .play {
-  background: url("/img/play.png");
+  background: url('/img/play.png');
 }
 .pause {
-  background: url("/img/pause.png");
+  background: url('/img/pause.png');
 }
 
 /*CSS for track-name display*/
@@ -65,8 +66,8 @@ img:hover {
 /*CSS for top-bar and its elements follows*/
 #top-left {
   background-color: ghostwhite;
-  font-family: Consolas, "Andale Mono", "Lucida Console",
-    "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  font-family: Consolas, 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
 }
 
 th {
@@ -216,7 +217,7 @@ th {
   border-radius: 50px;
   display: inline-block;
   position: relative;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==")
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==')
     no-repeat 50px center #e74c3c;
   cursor: pointer;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -226,7 +227,7 @@ th {
   cursor: pointer;
 }
 .toggle-btn.active {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC")
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC')
     no-repeat 10px center #2ecc71;
 }
 .toggle-btn.active .round-btn {
@@ -256,18 +257,17 @@ th {
   opacity: 0;
   z-index: 9;
   cursor: pointer;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
 }
 /* Checkbox CSS end */
 
-.screenReader 
-{
-  position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
+.screenReader {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .btn {
@@ -276,7 +276,7 @@ overflow:hidden;
   background-size: contain;
   height: 48px;
   margin: 3px 5px;
-  transition: transform .2s;
+  transition: transform 0.2s;
   width: 48px;
 }
 .btn:hover,

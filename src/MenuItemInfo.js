@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import ExpandToggle from "./components/ExpandToggle";
+import React, { Component } from 'react'
+import ExpandToggle from './components/ExpandToggle'
 import './MenuItem.css'
 
 export default class MenuItemInfo extends Component {
@@ -11,7 +11,7 @@ export default class MenuItemInfo extends Component {
             <button
               className="btn"
               type="button"
-              style={{ backgroundImage: "url(img/info.png)" }}
+              style={{ backgroundImage: 'url(img/info.png)' }}
               onMouseEnter={props.toggle}
               onMouseLeave={props.toggle}
               onFocus={props.toggle}
@@ -21,7 +21,7 @@ export default class MenuItemInfo extends Component {
             </button>
             <div
               className="menuDropdown"
-              style={{ display: state.expanded ? "" : "none" }}
+              style={{ display: state.expanded ? '' : 'none' }}
             >
               <table className="table table-hover">
                 <thead>
@@ -91,6 +91,6 @@ export default class MenuItemInfo extends Component {
           </div>
         )}
       </ExpandToggle>
-    );
+    )
   }
 }

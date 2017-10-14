@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import ExpandToggle from "./components/ExpandToggle";
-import "./MenuItem.css";
+import React, { Component } from 'react'
+import ExpandToggle from './components/ExpandToggle'
+import './MenuItem.css'
 
 export default class MenuItemPreferences extends Component {
   render() {
@@ -11,14 +11,14 @@ export default class MenuItemPreferences extends Component {
             <button
               className="btn"
               type="button"
-              style={{ backgroundImage: "url(img/options.jpg)" }}
+              style={{ backgroundImage: 'url(img/options.jpg)' }}
               onClick={props.toggle}
             >
               <span className="screenReader">Preferences</span>
             </button>
             <div
               className="menuDropdown"
-              style={{ display: state.expanded ? "" : "none" }}
+              style={{ display: state.expanded ? '' : 'none' }}
             >
               <div className="opening">
                 <div>Opening</div>
@@ -65,6 +65,6 @@ export default class MenuItemPreferences extends Component {
           </div>
         )}
       </ExpandToggle>
-    );
+    )
   }
 }
