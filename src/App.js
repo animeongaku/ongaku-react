@@ -6,6 +6,8 @@ import MenuItemPreferences from './MenuItemPreferences'
 
 class App extends Component {
   state = {
+    currentTrackIndex: 0,
+    tracksLength: data.length,
     src: data[0].link,
     bgImg: data[0].img,
     isFullscreen: false
@@ -29,6 +31,16 @@ class App extends Component {
     }
     this.setState({isFullscreen: !isFullscreen})
   }
+  nextTrack = () => {
+    const currentTrackIndex = ++this.state.currentTrackIndex % data.length
+    const track = data[currentTrackIndex]
+    this.setState({currentTrackIndex, src: track.link, bgImg: track.img})
+  }
+  previousTrack = () => {
+    const currentTrackIndex = --this.state.currentTrackIndex % data.length
+    const track = data[currentTrackIndex]
+    this.setState({currentTrackIndex, src: track.link, bgImg: track.img})
+  } 
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
@@ -47,14 +59,13 @@ class App extends Component {
         <div className="bottom-bar">
 
           <div className="bottom-left">
-            <div id="previous" title="Play Last">
-              <img src="img/previous-button.png"/>
-            </div>
-            <div id="next" title="Play Next">
-              <img src="img/next-button.png"/>
-            </div>
+            <button className="btn" type="button" onClick={this.previousTrack} style={{backgroundImage: 'url(img/previous-button.png)'}}>
+              <span className="screenReader">Play Last</span>
+            </button>
+            <button className="btn" type="button" onClick={this.nextTrack} style={{backgroundImage: 'url(img/next-button.png)'}}>
+              <span className="screenReader">Play Next</span>
+            </button>
           </div>
-
         
           <div id="wrapper">
             <div id="player">
@@ -73,7 +84,7 @@ class App extends Component {
             <div id="restart" title="Play Again">
               <img src="img/restart.png"/>
             </div>
-            <button id="fullscreen-button" type="button" class="btn" onClick={this.toggleFullscreen} style={{backgroundImage: `url(${this.state.isFullscreen ? 'img/cancel-fullscreen.png' : 'img/go-fullscreen.png'})` }}>
+            <button id="fullscreen-button" type="button" className="btn" onClick={this.toggleFullscreen} style={{backgroundImage: `url(${this.state.isFullscreen ? 'img/cancel-fullscreen.png' : 'img/go-fullscreen.png'})` }}>
               <span className="screenReader">Toggle Fullscreen</span>
             </button>
           </div>
