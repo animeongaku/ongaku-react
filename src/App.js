@@ -40,7 +40,10 @@ class App extends Component {
     const currentTrackIndex = --this.state.currentTrackIndex % data.length
     const track = data[currentTrackIndex]
     this.setState({currentTrackIndex, src: track.link, bgImg: track.img})
-  } 
+  }
+  restartTrack = () => {
+    this.audio.currentTime = 0
+  }
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
@@ -81,9 +84,9 @@ class App extends Component {
           </div>
         
           <div className="botton-right">
-            <div id="restart" title="Play Again">
-              <img src="img/restart.png"/>
-            </div>
+            <button id="restart" className="btn" onClick={this.restartTrack} style={{backgroundImage: `url(img/restart.png)`}}>
+              <span className="screenReader">Restart track</span>
+            </button>
             <button id="fullscreen-button" type="button" className="btn" onClick={this.toggleFullscreen} style={{backgroundImage: `url(${this.state.isFullscreen ? 'img/cancel-fullscreen.png' : 'img/go-fullscreen.png'})` }}>
               <span className="screenReader">Toggle Fullscreen</span>
             </button>
