@@ -11,7 +11,8 @@ class App extends Component {
     src: data[0].link,
     bgImg: data[0].img,
     isFullscreen: false,
-    isPlaying: false
+    isPlaying: false,
+    percentComplete: 0
   }
   togglePlay = () => {
     this.setState(
@@ -49,14 +50,20 @@ class App extends Component {
     this.audio.currentTime = 0
   }
   componentDidMount() {
-    // this.togglePlay()
+    // this.audio.addEventListener('canplay', this.togglePlay)
+  }
+  timeUpdate = (e) => {
+    const {currentTime, duration} = e.target
+    const percentComplete = (currentTime / duration * 100).toFixed(2)
+    this.setState({percentComplete}, () => {console.log(this.state.percentComplete)})
   }
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
         <audio 
           ref={(a) => { this.audio = a }} 
-          src={this.state.src} ></audio>
+          src={this.state.src} 
+          onTimeUpdate={this.timeUpdate}></audio>
         <div className="top-bar">
           <MenuItemInfo />
           <MenuItemPreferences />
@@ -83,9 +90,8 @@ class App extends Component {
                 <span className="screenReader">Toggle Play</span>
               </button>
               <div id="timeline">
-                <div id="buffered-bar">
-                  <div id="playhead"></div>
-                </div>
+                <div id="buffered-bar"></div>
+                <div id="playhead" style={{left: `${this.state.percentComplete}%`}}></div>
               </div>
             </div>
           </div>

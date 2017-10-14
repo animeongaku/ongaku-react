@@ -180,6 +180,7 @@ th {
   float: left;
   border-radius: 15px;
   display: flex;
+  position: relative;
 }
 
 /*Grabable Playhead*/
@@ -190,6 +191,8 @@ th {
   border-radius: 50%;
   margin-top: 1px;
   background: black;
+  position: absolute;
+  left: 0;
 }
 
 #buffered-bar {
