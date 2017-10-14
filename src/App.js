@@ -50,9 +50,6 @@ class App extends Component {
   restartTrack = () => {
     this.audio.currentTime = 0
   }
-  componentDidMount() {
-    // this.audio.addEventListener('canplay', this.togglePlay)
-  }
   timeUpdate = (e) => {
     const {currentTime, duration} = e.target
     const percentComplete = (currentTime / duration * 100).toFixed(2)
@@ -72,6 +69,7 @@ class App extends Component {
         <audio 
           ref={(a) => { this.audio = a }} 
           src={this.state.src}
+          onCanPlay={this.togglePlay}
           onTimeUpdate={this.timeUpdate}
           onProgress={this.progressUpdate}></audio>
         <div className="top-bar">
