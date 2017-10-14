@@ -10,10 +10,14 @@ class App extends Component {
     tracksLength: data.length,
     src: data[0].link,
     bgImg: data[0].img,
-    isFullscreen: false
+    isFullscreen: false,
+    isPlaying: false
   }
   togglePlay = () => {
-    this.audio[this.audio.paused ? 'play' : 'pause']();
+    this.setState(
+      {isPlaying: !this.audio.paused}, 
+      () => { this.audio[this.state.isPlaying ? 'pause' : 'play']() }
+    )
   }
   toggleFullscreen = () => {
     const { isFullscreen } = this.state
@@ -72,7 +76,7 @@ class App extends Component {
         
           <div id="wrapper">
             <div id="player">
-              <button id="pButton" type="button" className="play" onClick={this.togglePlay}>
+              <button id="pButton" type="button" className={`btn ${this.state.isPlaying ? 'play' : 'pause'}`} onClick={this.togglePlay}>
                 <span className="screenReader">Toggle Play</span>
               </button>
               <div id="timeline">
