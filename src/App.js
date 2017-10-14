@@ -55,7 +55,7 @@ class App extends Component {
   timeUpdate = (e) => {
     const {currentTime, duration} = e.target
     const percentComplete = (currentTime / duration * 100).toFixed(2)
-    this.setState({percentComplete}, () => {console.log(this.state.percentComplete)})
+    this.setState({percentComplete})
   }
   render() {
     return (
