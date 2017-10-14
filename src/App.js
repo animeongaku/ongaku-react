@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
-import data from './data';
+import React, { Component } from 'react'
+import './App.css'
+import data from './data'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 
@@ -24,16 +24,16 @@ class App extends Component {
   toggleFullscreen = () => {
     const { isFullscreen } = this.state
     if (isFullscreen) {
-			if (document.exitFullscreen) document.exitFullscreen();
-			else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-			else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
-			else if (document.msExitFullscreen) document.msExitFullscreen();
+			if (document.exitFullscreen) document.exitFullscreen()
+			else if (document.webkitExitFullscreen) document.webkitExitFullscreen()
+			else if (document.mozCancelFullScreen) document.mozCancelFullScreen()
+			else if (document.msExitFullscreen) document.msExitFullscreen()
 		} else {
-			const e = document.documentElement;
-			if (e.requestFullscreen) e.requestFullscreen();
-			else if (e.webkitRequestFullscreen) e.webkitRequestFullscreen();
-			else if (e.mozRequestFullScreen) e.mozRequestFullScreen();
-			else if (e.msRequestFullscreen) e.msRequestFullscreen();
+			const e = document.documentElement
+			if (e.requestFullscreen) e.requestFullscreen()
+			else if (e.webkitRequestFullscreen) e.webkitRequestFullscreen()
+			else if (e.mozRequestFullScreen) e.mozRequestFullScreen()
+			else if (e.msRequestFullscreen) e.msRequestFullscreen()
     }
     this.setState({isFullscreen: !isFullscreen})
   }
@@ -114,8 +114,8 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
