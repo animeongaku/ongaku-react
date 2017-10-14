@@ -48,6 +48,9 @@ class App extends Component {
   restartTrack = () => {
     this.audio.currentTime = 0
   }
+  componentDidMount() {
+    // this.togglePlay()
+  }
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
