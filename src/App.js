@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     currentTrackIndex: 0,
     tracksLength: data.length,
+    trackName: data[0].name,
     src: data[0].link,
     bgImg: data[0].img,
     isFullscreen: false,
@@ -83,7 +84,9 @@ class App extends Component {
         </div>
 
         <div className="display-track">
-          <div id="track-name" />
+          {this.state.trackName && (
+            <div id="track-name">{this.state.trackName}</div>
+          )}
         </div>
 
         <div className="bottom-bar">
