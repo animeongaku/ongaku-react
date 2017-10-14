@@ -271,9 +271,10 @@ overflow:hidden;
   border: none;
   background-color: transparent;
   background-size: contain;
-  width: 48px;
   height: 48px;
+  margin: 3px 5px;
   transition: transform .2s;
+  width: 48px;
 }
 .btn:hover,
 .btn:focus {
