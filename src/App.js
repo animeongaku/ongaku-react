@@ -12,7 +12,8 @@ class App extends Component {
     bgImg: data[0].img,
     isFullscreen: false,
     isPlaying: false,
-    percentComplete: 0
+    percentComplete: 0,
+    percentBuffered: 0
   }
   togglePlay = () => {
     this.setState(
@@ -57,13 +58,22 @@ class App extends Component {
     const percentComplete = (currentTime / duration * 100).toFixed(2)
     this.setState({percentComplete})
   }
+  progressUpdate = (e) => {
+    const {buffered, duration} = e.target
+    if(buffered.length) {
+      const lastTimeRangeIndex = buffered.length - 1
+      const percentBuffered = buffered.end(lastTimeRangeIndex) / duration * 100 
+      this.setState({percentBuffered})
+    }
+  }
   render() {
     return (
       <div className="App" style={{backgroundImage: `url(${this.state.bgImg})`}}>
         <audio 
           ref={(a) => { this.audio = a }} 
-          src={this.state.src} 
-          onTimeUpdate={this.timeUpdate}></audio>
+          src={this.state.src}
+          onTimeUpdate={this.timeUpdate}
+          onProgress={this.progressUpdate}></audio>
         <div className="top-bar">
           <MenuItemInfo />
           <MenuItemPreferences />
@@ -90,7 +100,7 @@ class App extends Component {
                 <span className="screenReader">Toggle Play</span>
               </button>
               <div id="timeline">
-                <div id="buffered-bar"></div>
+                <div id="buffered-bar" style={{flexBasis: `${this.state.percentBuffered}%`}}></div>
                 <div id="playhead" style={{left: `${this.state.percentComplete}%`}}></div>
               </div>
             </div>
