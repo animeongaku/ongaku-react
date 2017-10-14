@@ -63,6 +63,38 @@ class App extends Component {
       this.setState({ percentBuffered })
     }
   }
+  handleKeyboardEvents = ({ keyCode }) => {
+    console.log(keyCode)
+    switch (keyCode) {
+      case 32: // space
+        this.togglePlay()
+        break
+      case 78: // n
+        this.nextTrack()
+        break
+      case 82: // r
+        this.restartTrack()
+        break
+      case 70: // f
+        this.toggleFullscreen()
+        break
+      case 76: // l
+        this.previousTrack()
+        break
+      case 37: // left arrow
+      case 38: // up arrow
+      case 39: // right arrow
+      case 40: // down arrow
+      default:
+        return
+    }
+  }
+  componentDidMount() {
+    document.addEventListener('keyup', this.handleKeyboardEvents)
+  }
+  componentWillUnmount() {
+    document.removeEventListener('keyup', this.handleKeyboardEvents)
+  }
   render() {
     return (
       <div

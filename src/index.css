@@ -283,11 +283,18 @@ th {
 .btn:focus {
   transform: scale(1.1);
 }
-
+.table {
+  border: none;
+  border-collapse: collapse;
+}
 .table thead {
   background: #000;
   color: #fff;
 }
 .table tr {
   white-space: nowrap;
+}
+.table td,
+.table th {
+  padding: 3px 6px;
 }
