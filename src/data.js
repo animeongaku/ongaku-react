@@ -1,4 +1,4 @@
-const openings = [
+export const openings = [
   {
     link:
       'http://67.159.62.2/anime_ost/tokyo-ghoul-op-single-unravel/eepprhqwvp/01%20-%20unravel.mp3',
@@ -603,7 +603,7 @@ const openings = [
   }
 ]
 
-const endings = [
+export const endings = [
   {
     link:
       'http://lyricmp3skull.org/s363640c/file/boku-no-hero-academia-season-2-ed-ending/315567154.mp3',
@@ -776,7 +776,7 @@ const endings = [
   }
 ]
 
-const osts = [
+export const osts = [
   {
     link:
       'http://66.90.93.122/ost/death-note-original-soundtrack/fghgpcdtbm/04-l-s-theme.mp3',
@@ -1490,10 +1490,10 @@ const osts = [
   }
 ]
 
-const data = shuffle(openings, endings, osts)
+// const data = shuffle(openings, endings, osts)
 
 // The de-facto unbiased shuffle algorithm is the Fisher-Yates (aka Knuth) Shuffle (based on SE answer).
-function shuffle(array) {
+export function shuffle(array) {
   var currentIndex = array.length,
     temporaryValue,
     randomIndex
@@ -1510,4 +1510,4 @@ function shuffle(array) {
   return array
 }
 
-export default data
+export default { openings, endings, osts, shuffle }

@@ -213,7 +213,7 @@ th {
 .toggle-btn {
   width: 80px;
   height: 40px;
-  margin: 10px;
+  margin: 4px 6px;
   border-radius: 50px;
   display: inline-block;
   position: relative;
@@ -297,4 +297,8 @@ th {
 .table td,
 .table th {
   padding: 3px 6px;
+}
+.github-container {
+  display: flex;
+  margin-top: 10px;
 }
