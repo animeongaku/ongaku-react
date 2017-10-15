@@ -1,20 +1,27 @@
 import React, { Component } from 'react'
 import './App.css'
-import data from './data'
+import { openings, endings, osts, shuffle } from './data'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 
+const initialData = shuffle([...openings, ...endings, ...osts])
+
 class App extends Component {
   state = {
+    data: initialData,
     currentTrackIndex: 0,
-    tracksLength: data.length,
-    trackName: data[0].name,
-    src: data[0].link,
-    bgImg: data[0].img,
+    trackName: initialData[0].name,
+    src: initialData[0].link,
+    bgImg: initialData[0].img,
     isFullscreen: false,
     isPlaying: false,
     percentComplete: 0,
-    percentBuffered: 0
+    percentBuffered: 0,
+    preference: {
+      opening: true,
+      ending: true,
+      ost: true
+    }
   }
   togglePlay = () => {
     this.setState({ isPlaying: !this.audio.paused }, () => {
@@ -38,13 +45,15 @@ class App extends Component {
     this.setState({ isFullscreen: !isFullscreen })
   }
   nextTrack = () => {
-    const currentTrackIndex = ++this.state.currentTrackIndex % data.length
-    const track = data[currentTrackIndex]
+    const currentTrackIndex =
+      ++this.state.currentTrackIndex % this.state.data.length
+    const track = this.state.data[currentTrackIndex]
     this.setState({ currentTrackIndex, src: track.link, bgImg: track.img })
   }
   previousTrack = () => {
-    const currentTrackIndex = --this.state.currentTrackIndex % data.length
-    const track = data[currentTrackIndex]
+    const currentTrackIndex =
+      --this.state.currentTrackIndex % this.state.data.length
+    const track = this.state.data[currentTrackIndex]
     this.setState({ currentTrackIndex, src: track.link, bgImg: track.img })
   }
   restartTrack = () => {
@@ -89,6 +98,17 @@ class App extends Component {
         return
     }
   }
+  togglePreference = e => {
+    const { name } = e.target
+    let { preference } = this.state
+    preference[name] = !preference[name]
+    const data = shuffle([
+      ...(preference.opening ? openings : []),
+      ...(preference.ending ? endings : []),
+      ...(preference.ost ? osts : [])
+    ])
+    this.setState({ preference, data })
+  }
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }
@@ -112,7 +132,10 @@ class App extends Component {
         />
         <div className="top-bar">
           <MenuItemInfo />
-          <MenuItemPreferences />
+          <MenuItemPreferences
+            togglePreferenceState={this.togglePreference}
+            preferenceState={this.state.preference}
+          />
         </div>
 
         <div className="display-track">

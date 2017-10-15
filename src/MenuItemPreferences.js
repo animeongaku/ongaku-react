@@ -4,6 +4,7 @@ import './MenuItem.css'
 
 export default class MenuItemPreferences extends Component {
   render() {
+    const { togglePreferenceState, preferenceState } = this.props
     return (
       <ExpandToggle>
         {(state, props) => (
@@ -22,22 +23,52 @@ export default class MenuItemPreferences extends Component {
             >
               <div className="opening">
                 <div>Opening</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox" checked className="cb-value cb-op" />
+                <div
+                  className={`toggle-btn ${preferenceState.opening
+                    ? 'active'
+                    : ''}`}
+                >
+                  <input
+                    type="checkbox"
+                    className="cb-value cb-op"
+                    name="opening"
+                    checked={preferenceState.opening}
+                    onChange={togglePreferenceState}
+                  />
                   <span className="round-btn" />
                 </div>
               </div>
               <div className="ending">
                 <div>Ending</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox" checked className="cb-value cb-ed" />
+                <div
+                  className={`toggle-btn ${preferenceState.ending
+                    ? 'active'
+                    : ''}`}
+                >
+                  <input
+                    type="checkbox"
+                    className="cb-value cb-ed"
+                    name="ending"
+                    checked={preferenceState.ending}
+                    onChange={togglePreferenceState}
+                  />
                   <span className="round-btn" />
                 </div>
               </div>
               <div className="ost">
                 <div>OST</div>
-                <div className="toggle-btn active">
-                  <input type="checkbox" checked className="cb-value cb-ost" />
+                <div
+                  className={`toggle-btn ${preferenceState.ost
+                    ? 'active'
+                    : ''}`}
+                >
+                  <input
+                    type="checkbox"
+                    className="cb-value cb-ost"
+                    name="ost"
+                    checked={preferenceState.ost}
+                    onChange={togglePreferenceState}
+                  />
                   <span className="round-btn" />
                 </div>
               </div>
