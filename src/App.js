@@ -59,6 +59,13 @@ class App extends Component {
   restartTrack = () => {
     this.audio.currentTime = 0
   }
+  rewindTrack = () => {
+    this.audio.currentTime = Math.max(0, this.audio.currentTime - 10)
+  }
+  forwardTrack = () => {
+    const { duration, currentTime } = this.audio
+    this.audio.currentTime = Math.min(duration, currentTime + 10)
+  }
   timeUpdate = e => {
     const { currentTime, duration } = e.target
     const percentComplete = (currentTime / duration * 100).toFixed(2)
@@ -91,11 +98,13 @@ class App extends Component {
         this.previousTrack()
         break
       case 37: // left arrow
+        this.rewindTrack()
         break
       case 38: // up arrow
         this.volumeUp()
         break
       case 39: // right arrow
+        this.forwardTrack()
         break
       case 40: // down arrow
         this.volumeDown()
@@ -176,7 +185,11 @@ class App extends Component {
             this.audio = a
           }}
           src={this.state.src}
-          onCanPlay={this.togglePlay}
+          onCanPlay={() => {
+            if (this.audio.paused) {
+              this.togglePlay()
+            }
+          }}
           onTimeUpdate={this.timeUpdate}
           onProgress={this.progressUpdate}
         />
