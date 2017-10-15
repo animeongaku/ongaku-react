@@ -98,10 +98,21 @@ class App extends Component {
         return
     }
   }
+  allFalse = obj => {
+    const checkStatus = element => {
+      return element === false
+    }
+    const values = Object.values(obj)
+    const status = values.every(checkStatus)
+    return status
+  }
   togglePreference = e => {
     const { name } = e.target
     let { preference } = this.state
     preference[name] = !preference[name]
+    if (this.allFalse(preference)) {
+      preference[name] = true
+    }
     const data = shuffle([
       ...(preference.opening ? openings : []),
       ...(preference.ending ? endings : []),
