@@ -91,9 +91,15 @@ class App extends Component {
         this.previousTrack()
         break
       case 37: // left arrow
+        break
       case 38: // up arrow
+        this.volumeUp()
+        break
       case 39: // right arrow
+        break
       case 40: // down arrow
+        this.volumeDown()
+        break
       default:
         return
     }
@@ -109,12 +115,45 @@ class App extends Component {
     ])
     this.setState({ preference, data })
   }
+  showTempTrackDisplay = tempDisplayStr => {
+    this.setState({ trackName: tempDisplayStr }, () => {
+      clearTimeout(this.trackDisplayQueue)
+      this.trackDisplayQueue = setTimeout(() => {
+        this.setState({
+          trackName: this.state.data[this.state.currentTrackIndex].name
+        })
+      }, 1000)
+    })
+  }
+  volumeUp = () => {
+    this.audio.volume = Math.min(
+      1,
+      Math.round((this.audio.volume + 0.1) * 10) / 10
+    )
+    this.showTempTrackDisplay(
+      <span className="icon iconVolumeUp">
+        {parseInt(this.audio.volume * 100, 10)}
+      </span>
+    )
+  }
+  volumeDown = () => {
+    this.audio.volume = Math.max(
+      0,
+      Math.round((this.audio.volume - 0.1) * 10) / 10
+    )
+    this.showTempTrackDisplay(
+      <span className="icon iconVolumeDown">
+        {parseInt(this.audio.volume * 100, 10)}
+      </span>
+    )
+  }
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }
   componentWillUnmount() {
     document.removeEventListener('keyup', this.handleKeyboardEvents)
   }
+  trackDisplayQueue = undefined
   render() {
     return (
       <div
