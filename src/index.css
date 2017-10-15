@@ -302,3 +302,18 @@ th {
   display: flex;
   margin-top: 10px;
 }
+.icon::before {
+  background-size: contain;
+  content: '';
+  display: inline-block;
+  height: 1em;
+  margin-bottom: -5px;
+  margin-right: 0.25em;
+  width: 1em;
+}
+.icon.iconVolumeUp::before {
+  background-image: url('/img/volume_up.svg');
+}
+.icon.iconVolumeDown::before {
+  background-image: url('/img/volume_down.svg');
+}
