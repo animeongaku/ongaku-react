@@ -18,7 +18,7 @@ export default class MenuItemPreferences extends Component {
               <span className="screenReader">Preferences</span>
             </button>
             <div
-              className="menuDropdown"
+              className="menuDropdown padded"
               style={{ display: state.expanded ? '' : 'none' }}
             >
               <div className="opening">
@@ -72,26 +72,28 @@ export default class MenuItemPreferences extends Component {
                   <span className="round-btn" />
                 </div>
               </div>
-              <a
-                className="github-button"
-                href="https://github.com/anshumanv/ongaku"
-                data-icon="octicon-star"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Star Anshuman-Verma/ongaku on GitHub"
-              >
-                Star
-              </a>
-              <a
-                className="github-button"
-                href="https://github.com/anshumanv/ongaku/fork"
-                data-icon="octicon-repo-forked"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Fork Anshuman-Verma/ongaku on GitHub"
-              >
-                Fork
-              </a>
+              <div className="github-container">
+                <a
+                  className="github-button"
+                  href="https://github.com/anshumanv/ongaku"
+                  data-icon="octicon-star"
+                  data-size="large"
+                  data-show-count="true"
+                  aria-label="Star Anshuman-Verma/ongaku on GitHub"
+                >
+                  Star
+                </a>
+                <a
+                  className="github-button"
+                  href="https://github.com/anshumanv/ongaku/fork"
+                  data-icon="octicon-repo-forked"
+                  data-size="large"
+                  data-show-count="true"
+                  aria-label="Fork Anshuman-Verma/ongaku on GitHub"
+                >
+                  Fork
+                </a>
+              </div>
             </div>
           </div>
         )}

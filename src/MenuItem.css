@@ -10,3 +10,6 @@
   right: 0;
   top: 100%;
 }
+.menuDropdown.padded {
+  padding: 10px;
+}
