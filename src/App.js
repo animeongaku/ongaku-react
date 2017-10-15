@@ -80,7 +80,6 @@ class App extends Component {
     }
   }
   handleKeyboardEvents = ({ keyCode }) => {
-    console.log(keyCode)
     switch (keyCode) {
       case 32: // space
         this.togglePlay()
