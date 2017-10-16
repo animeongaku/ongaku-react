@@ -61,10 +61,27 @@ class App extends Component {
   }
   rewindTrack = () => {
     this.audio.currentTime = Math.max(0, this.audio.currentTime - 10)
+    this.showTempTrackDisplay(
+      <span className="icon iconRewind">
+        {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
+      </span>
+    )
   }
   forwardTrack = () => {
     const { duration, currentTime } = this.audio
     this.audio.currentTime = Math.min(duration, currentTime + 10)
+    this.showTempTrackDisplay(
+      <span className="icon iconFastforward">
+        {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
+      </span>
+    )
+  }
+  formatCurrentTime = currentTime => {
+    const mins = Math.floor(currentTime / 60)
+      .toString()
+      .padStart(2, '0')
+    const secs = (currentTime - mins * 60).toString().padStart(2, '0')
+    return `${mins}:${secs}`
   }
   timeUpdate = e => {
     const { currentTime, duration } = e.target
