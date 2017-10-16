@@ -166,6 +166,9 @@ class App extends Component {
       </span>
     )
   }
+  handleTrackScrub = e => {
+    this.audio.currentTime = e.target.value / 100 * this.audio.duration
+  }
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }
@@ -236,14 +239,20 @@ class App extends Component {
               >
                 <span className="screenReader">Toggle Play</span>
               </button>
-              <div id="timeline">
-                <div
-                  id="buffered-bar"
-                  style={{ flexBasis: `${this.state.percentBuffered}%` }}
-                />
-                <div
-                  id="playhead"
-                  style={{ left: `${this.state.percentComplete}%` }}
+              <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+                <input
+                  id="timeline"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value={this.state.percentComplete}
+                  onChange={this.handleTrackScrub}
+                  style={{
+                    background: `linear-gradient(to right, rgba(0,0,0,.5) ${this
+                      .state.percentBuffered}%, rgba(0,0,0,.25) ${this.state
+                      .percentBuffered}%, rgba(0,0,0,.25))`
+                  }}
                 />
               </div>
             </div>
