@@ -275,6 +275,8 @@ th {
   margin-top: 10px;
 }
 .icon::before {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
   content: '';
   display: inline-block;
@@ -288,6 +290,12 @@ th {
 }
 .icon.iconVolumeDown::before {
   background-image: url('/img/volume_down.svg');
+}
+.icon.iconFastforward::before {
+  background-image: url('/img/fastforward.svg');
+}
+.icon.iconRewind::before {
+  background-image: url('/img/rewind.svg');
 }
 input[type='range'] {
   -webkit-appearance: none;
