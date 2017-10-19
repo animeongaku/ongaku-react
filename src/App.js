@@ -48,13 +48,23 @@ class App extends Component {
     const currentTrackIndex =
       ++this.state.currentTrackIndex % this.state.data.length
     const track = this.state.data[currentTrackIndex]
-    this.setState({ currentTrackIndex, src: track.link, bgImg: track.img })
+    this.setState({
+      currentTrackIndex,
+      src: track.link,
+      bgImg: track.img,
+      trackName: track.name
+    })
   }
   previousTrack = () => {
     const currentTrackIndex =
       --this.state.currentTrackIndex % this.state.data.length
     const track = this.state.data[currentTrackIndex]
-    this.setState({ currentTrackIndex, src: track.link, bgImg: track.img })
+    this.setState({
+      currentTrackIndex,
+      src: track.link,
+      bgImg: track.img,
+      trackName: track.name
+    })
   }
   restartTrack = () => {
     this.audio.currentTime = 0
