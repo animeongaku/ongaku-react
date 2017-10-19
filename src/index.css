@@ -16,23 +16,6 @@ body {
   height: 100%;
 }
 
-img {
-  transition: all 0.2s;
-  margin: 5px;
-  height: 60px;
-  transform: scale(0.8);
-  background: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.infoImg {
-  transition: all 0s;
-}
-
-img:hover {
-  transform: scale(1);
-  cursor: pointer;
-}
-
 .play {
   background: url('/img/play.png');
 }
@@ -63,13 +46,6 @@ img:hover {
   justify-content: center;
 }
 
-/*CSS for top-bar and its elements follows*/
-#top-left {
-  background-color: ghostwhite;
-  font-family: Consolas, 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
-}
-
 th {
   text-align: center;
 }
@@ -86,40 +62,11 @@ th {
   text-align: center;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .top-bar {
   display: flex;
   align-self: flex-start;
   width: 100vw;
   justify-content: flex-end;
-}
-
-#popover-body,
-#popover-title {
-  display: none;
-}
-
-.popover-body,
-.popover-title {
-  font-family: cairo;
-  font-size: 20px;
-}
-
-.popover-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.popover-body > * {
-  flex: 1;
 }
 
 .opening,
