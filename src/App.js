@@ -71,7 +71,7 @@ class App extends Component {
     this.audio.currentTime = 0
   }
   rewindTrack = () => {
-    this.audio.currentTime = Math.max(0, this.audio.currentTime - 10)
+    this.audio.currentTime = Math.max(0, this.audio.currentTime - 10) || 0
     this.showTempTrackDisplay(
       <span className="icon iconRewind">
         {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
@@ -80,7 +80,7 @@ class App extends Component {
   }
   forwardTrack = () => {
     const { duration, currentTime } = this.audio
-    this.audio.currentTime = Math.min(duration, currentTime + 10)
+    this.audio.currentTime = Math.min(duration, currentTime + 10) || 0
     this.showTempTrackDisplay(
       <span className="icon iconFastforward">
         {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
