@@ -266,8 +266,12 @@ class App extends Component {
                 <span className="screenReader">Toggle Play</span>
               </button>
               <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+                <label htmlFor="timeline" className="screenReader">
+                  Track timeline
+                </label>
                 <input
                   id="timeline"
+                  name="timeline"
                   type="range"
                   min="0"
                   max="100"
