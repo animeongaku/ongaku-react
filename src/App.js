@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import { openings, endings, osts, shuffle } from './data'
+import { keys } from './constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 
@@ -98,31 +99,31 @@ class App extends Component {
   }
   handleKeyboardEvents = ({ keyCode }) => {
     switch (keyCode) {
-      case 32: // space
+      case keys.SPACE:
         this.togglePlay()
         break
-      case 78: // n
+      case keys.N:
         this.nextTrack()
         break
-      case 82: // r
+      case keys.R:
         this.restartTrack()
         break
-      case 70: // f
+      case keys.F:
         this.toggleFullscreen()
         break
-      case 76: // l
+      case keys.L:
         this.previousTrack()
         break
-      case 37: // left arrow
+      case keys.LEFT_ARROW:
         this.rewindTrack()
         break
-      case 38: // up arrow
+      case keys.UP_ARROW:
         this.volumeUp()
         break
-      case 39: // right arrow
+      case keys.RIGHT_ARROW:
         this.forwardTrack()
         break
-      case 40: // down arrow
+      case keys.DOWN_ARROW:
         this.volumeDown()
         break
       default:
@@ -130,9 +131,7 @@ class App extends Component {
     }
   }
   allFalse = obj => {
-    const checkStatus = element => {
-      return element === false
-    }
+    const checkStatus = element => element === false
     const values = Object.values(obj)
     const status = values.every(checkStatus)
     return status
