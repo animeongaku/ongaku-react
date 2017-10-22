@@ -22,7 +22,21 @@ body {
 .pause {
   background: url('/img/pause.png');
 }
-
+.back {
+  background-image: url('/img/previous-button.png');
+}
+.next {
+  background-image: url('/img/next-button.png');
+}
+.restart {
+  background-image: url('/img/restart.png');
+}
+.goFullscreen {
+  background-image: url('/img/go-fullscreen.png');
+}
+.cancelFullscreen {
+  background-image: url('/img/cancel-fullscreen.png');
+}
 /*CSS for track-name display*/
 #track-name {
   width: auto;
@@ -243,6 +257,11 @@ th {
 }
 .icon.iconRewind::before {
   background-image: url('/img/rewind.svg');
+}
+.timelineWrap {
+  flex: 1;
+  display: 'flex';
+  align-items: 'center';
 }
 input[type='range'] {
   -webkit-appearance: none;
