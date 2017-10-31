@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.0.2",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
   },
   "devDependencies": {
+    "enzyme": "^3.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.3",
     "prettier": "^1.7.4",
