@@ -71,7 +71,7 @@ class App extends Component {
     this.audio.currentTime = 0
   }
   rewindTrack = () => {
-    this.audio.currentTime = Math.max(0, this.audio.currentTime - 10)
+    this.audio.currentTime = Math.max(0, this.audio.currentTime - 10) || 0
     this.showTempTrackDisplay(
       <span className="icon iconRewind">
         {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
@@ -80,7 +80,7 @@ class App extends Component {
   }
   forwardTrack = () => {
     const { duration, currentTime } = this.audio
-    this.audio.currentTime = Math.min(duration, currentTime + 10)
+    this.audio.currentTime = Math.min(duration, currentTime + 10) || 0
     this.showTempTrackDisplay(
       <span className="icon iconFastforward">
         {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
@@ -238,19 +238,13 @@ class App extends Component {
         <div className="bottom-bar">
           <div className="bottom-left">
             <button
-              className="btn"
+              className="btn back"
               type="button"
               onClick={this.previousTrack}
-              style={{ backgroundImage: 'url(img/previous-button.png)' }}
             >
               <span className="screenReader">Play Last</span>
             </button>
-            <button
-              className="btn"
-              type="button"
-              onClick={this.nextTrack}
-              style={{ backgroundImage: 'url(img/next-button.png)' }}
-            >
+            <button className="btn next" type="button" onClick={this.nextTrack}>
               <span className="screenReader">Play Next</span>
             </button>
           </div>
@@ -265,9 +259,13 @@ class App extends Component {
               >
                 <span className="screenReader">Toggle Play</span>
               </button>
-              <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
+              <div className="timelineWrap">
+                <label htmlFor="timeline" className="screenReader">
+                  Track timeline
+                </label>
                 <input
                   id="timeline"
+                  name="timeline"
                   type="range"
                   min="0"
                   max="100"
@@ -287,22 +285,18 @@ class App extends Component {
           <div className="botton-right">
             <button
               id="restart"
-              className="btn"
+              className="btn restart"
               onClick={this.restartTrack}
-              style={{ backgroundImage: `url(img/restart.png)` }}
             >
               <span className="screenReader">Restart track</span>
             </button>
             <button
               id="fullscreen-button"
               type="button"
-              className="btn"
+              className={`btn ${this.state.isFullscreen
+                ? 'cancelFullscreen'
+                : 'goFullscreen'}`}
               onClick={this.toggleFullscreen}
-              style={{
-                backgroundImage: `url(${this.state.isFullscreen
-                  ? 'img/cancel-fullscreen.png'
-                  : 'img/go-fullscreen.png'})`
-              }}
             >
               <span className="screenReader">Toggle Fullscreen</span>
             </button>
