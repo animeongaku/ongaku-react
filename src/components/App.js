@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './App.css'
-import { openings, endings, osts, shuffle } from './data'
-import { keys } from './constants'
+import '../css/App.css'
+import { openings, endings, osts, shuffle } from '../data'
+import { keys } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 
@@ -273,9 +273,11 @@ class App extends Component {
                   value={this.state.percentComplete}
                   onChange={this.handleTrackScrub}
                   style={{
-                    background: `linear-gradient(to right, rgba(0,0,0,.5) ${this
-                      .state.percentBuffered}%, rgba(0,0,0,.25) ${this.state
-                      .percentBuffered}%, rgba(0,0,0,.25))`
+                    background: `linear-gradient(to right, rgba(0,0,0,.5) ${
+                      this.state.percentBuffered
+                    }%, rgba(0,0,0,.25) ${
+                      this.state.percentBuffered
+                    }%, rgba(0,0,0,.25))`
                   }}
                 />
               </div>
@@ -293,9 +295,9 @@ class App extends Component {
             <button
               id="fullscreen-button"
               type="button"
-              className={`btn ${this.state.isFullscreen
-                ? 'cancelFullscreen'
-                : 'goFullscreen'}`}
+              className={`btn ${
+                this.state.isFullscreen ? 'cancelFullscreen' : 'goFullscreen'
+              }`}
               onClick={this.toggleFullscreen}
             >
               <span className="screenReader">Toggle Fullscreen</span>

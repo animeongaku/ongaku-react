@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ExpandToggle from './components/ExpandToggle'
-import './MenuItem.css'
+import ExpandToggle from './ExpandToggle'
+import '../css/MenuItem.css'
 
 export default class MenuItemInfo extends Component {
   render() {

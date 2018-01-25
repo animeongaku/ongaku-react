@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ExpandToggle from './components/ExpandToggle'
-import './MenuItem.css'
+import ExpandToggle from './ExpandToggle'
+import '../css/MenuItem.css'
 
 export default class MenuItemPreferences extends Component {
   render() {
@@ -24,9 +24,9 @@ export default class MenuItemPreferences extends Component {
               <div className="opening">
                 <div>Opening</div>
                 <div
-                  className={`toggle-btn ${preferenceState.opening
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.opening ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
@@ -41,9 +41,9 @@ export default class MenuItemPreferences extends Component {
               <div className="ending">
                 <div>Ending</div>
                 <div
-                  className={`toggle-btn ${preferenceState.ending
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.ending ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
@@ -58,9 +58,9 @@ export default class MenuItemPreferences extends Component {
               <div className="ost">
                 <div>OST</div>
                 <div
-                  className={`toggle-btn ${preferenceState.ost
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.ost ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
