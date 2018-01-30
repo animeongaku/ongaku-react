@@ -9,3 +9,21 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.fa {
+  color: #fff;
+  padding: 0 15px;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+  transition: all 0.2s;
+}
+
+.fa:hover {
+  transform: scale(1.2);
+  transition: all 0.2s;
+  color: #bbb;
+}
+
+.fa:active {
+  color: #000;
+}

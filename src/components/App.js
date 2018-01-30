@@ -285,23 +285,19 @@ class App extends Component {
           </div>
 
           <div className="botton-right">
-            <button
-              id="restart"
-              className="btn restart"
-              onClick={this.restartTrack}
-            >
-              <span className="screenReader">Restart track</span>
-            </button>
-            <button
-              id="fullscreen-button"
-              type="button"
-              className={`btn ${
-                this.state.isFullscreen ? 'cancelFullscreen' : 'goFullscreen'
-              }`}
-              onClick={this.toggleFullscreen}
-            >
-              <span className="screenReader">Toggle Fullscreen</span>
-            </button>
+            <div id="restart" title="Play Again">
+              <i
+                className="fa fa-refresh fa-2x"
+                onClick={this.restartTrack}
+                title="Play Again"
+              />
+            </div>
+            <div id="fullscreen-button" title="Toggle Fullscreen">
+              <i
+                className="fa fa-arrows-alt fa-2x"
+                onClick={this.toggleFullscreen}
+              />
+            </div>
           </div>
         </div>
       </div>
