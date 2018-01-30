@@ -222,6 +222,7 @@ class App extends Component {
           onProgress={this.progressUpdate}
         />
         <div className="top-bar">
+          <i className="fa fa-2x fa-star" title="Favorite" />
           <MenuItemInfo />
           <MenuItemPreferences
             togglePreferenceState={this.togglePreference}
