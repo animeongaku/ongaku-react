@@ -9,14 +9,11 @@ export default class MenuItemPreferences extends Component {
       <ExpandToggle>
         {(state, props) => (
           <div className="menuItem">
-            <button
-              className="btn"
-              type="button"
-              style={{ backgroundImage: 'url(img/options.jpg)' }}
+            <i
+              className="fa fa-cog fa-2x"
+              title="Preferences"
               onClick={props.toggle}
-            >
-              <span className="screenReader">Preferences</span>
-            </button>
+            />
             <div
               className="menuDropdown padded"
               style={{ display: state.expanded ? '' : 'none' }}

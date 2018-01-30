@@ -8,17 +8,13 @@ export default class MenuItemInfo extends Component {
       <ExpandToggle>
         {(state, props) => (
           <div className="menuItem">
-            <button
-              className="btn"
-              type="button"
-              style={{ backgroundImage: 'url(img/info.png)' }}
+            <i
+              className="fa fa-info-circle fa-2x infoImg"
               onMouseEnter={props.toggle}
               onMouseLeave={props.toggle}
               onFocus={props.toggle}
               onBlur={props.toggle}
-            >
-              <span className="screenReader">Information</span>
-            </button>
+            />
             <div
               className="menuDropdown"
               style={{ display: state.expanded ? '' : 'none' }}

@@ -222,6 +222,7 @@ class App extends Component {
           onProgress={this.progressUpdate}
         />
         <div className="top-bar">
+          <i className="fa fa-2x fa-star" title="Favorite" />
           <MenuItemInfo />
           <MenuItemPreferences
             togglePreferenceState={this.togglePreference}
@@ -237,16 +238,12 @@ class App extends Component {
 
         <div className="bottom-bar">
           <div className="bottom-left">
-            <button
-              className="btn back"
-              type="button"
-              onClick={this.previousTrack}
-            >
-              <span className="screenReader">Play Last</span>
-            </button>
-            <button className="btn next" type="button" onClick={this.nextTrack}>
-              <span className="screenReader">Play Next</span>
-            </button>
+            <div id="previous" onClick={this.previousTrack} title="Play Last">
+              <i className="fa fa-backward fa-2x" />
+            </div>
+            <div id="next" onClick={this.nextTrack} title="Play Next">
+              <i className="fa fa-forward fa-2x" />
+            </div>
           </div>
 
           <div id="wrapper">
@@ -285,23 +282,19 @@ class App extends Component {
           </div>
 
           <div className="botton-right">
-            <button
-              id="restart"
-              className="btn restart"
-              onClick={this.restartTrack}
-            >
-              <span className="screenReader">Restart track</span>
-            </button>
-            <button
-              id="fullscreen-button"
-              type="button"
-              className={`btn ${
-                this.state.isFullscreen ? 'cancelFullscreen' : 'goFullscreen'
-              }`}
-              onClick={this.toggleFullscreen}
-            >
-              <span className="screenReader">Toggle Fullscreen</span>
-            </button>
+            <div id="restart" title="Play Again">
+              <i
+                className="fa fa-refresh fa-2x"
+                onClick={this.restartTrack}
+                title="Play Again"
+              />
+            </div>
+            <div id="fullscreen-button" title="Toggle Fullscreen">
+              <i
+                className="fa fa-arrows-alt fa-2x"
+                onClick={this.toggleFullscreen}
+              />
+            </div>
           </div>
         </div>
       </div>
