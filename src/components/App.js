@@ -237,16 +237,12 @@ class App extends Component {
 
         <div className="bottom-bar">
           <div className="bottom-left">
-            <button
-              className="btn back"
-              type="button"
-              onClick={this.previousTrack}
-            >
-              <span className="screenReader">Play Last</span>
-            </button>
-            <button className="btn next" type="button" onClick={this.nextTrack}>
-              <span className="screenReader">Play Next</span>
-            </button>
+            <div id="previous" onClick={this.previousTrack} title="Play Last">
+              <i className="fa fa-backward fa-2x" />
+            </div>
+            <div id="next" onClick={this.nextTrack} title="Play Next">
+              <i className="fa fa-forward fa-2x" />
+            </div>
           </div>
 
           <div id="wrapper">
