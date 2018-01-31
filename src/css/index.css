@@ -101,40 +101,91 @@ th {
 }
 
 #player {
-  display: flex;
-  align-items: center;
-  width: 480px;
-  height: 60px;
-  background: rgba(77, 133, 222, 0.62);
+  width: 100%;
   border-radius: 15px;
   opacity: 0.5;
-  padding: 0 10px;
   transition: all 0.5s;
-  transform: translateY(100%) translateY(-10px);
+  transform: translateY(100%) translateY(-15px);
 }
 
-#wrapper {
+#playTime {
+  font-size: medium;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #eee;
+  text-align: center;
+  margin: 0 auto -20px;
+  opacity: 0;
+  width: 150px;
+}
+
+#player-wrapper {
   display: flex;
   justify-content: center;
-  height: 75px;
-  overflow: hidden;
-  transform: translateY(10px);
+  transform: translateY(-60px);
+  top: 27px;
+  position: absolute;
+  width: 100%;
 }
 
 #player:hover {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translateY(18px);
+}
+
+#player:hover #playTime {
+  opacity: 1;
 }
 
 /* Play/Pause Button */
 #pButton {
   border: none;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 30px;
-  padding: 0;
-  width: 30px;
+  float: left;
+  margin: auto;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+#pButton i {
+  display: none;
+}
+
+#pButton .loader {
+  margin: 0 auto;
+}
+
+#timeline {
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+  display: flex;
+}
+
+/*Grabable Playhead*/
+#playhead {
+  cursor: pointer;
+  width: 2px;
+  height: 15px;
+  margin-top: -15px;
+  background: red;
+  transition: all 0.5s;
+}
+
+#playedBar {
+  cursor: pointer;
+  height: 14px;
+  margin-top: -4px;
+  background: red;
+  transition: all 0.5s;
+}
+
+#buffered-bar {
+  height: 10px;
+  flex-basis: 0%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s;
 }
 
 .botton-right,

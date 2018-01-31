@@ -4,6 +4,7 @@ import { openings, endings, osts, shuffle } from '../data'
 import { keys } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
+import Player from './Player'
 
 const initialData = shuffle([...openings, ...endings, ...osts])
 
@@ -221,7 +222,14 @@ class App extends Component {
           onTimeUpdate={this.timeUpdate}
           onProgress={this.progressUpdate}
         />
+
+        {/* Top-bar components */}
         <div className="top-bar">
+          <Player
+            percentComplete={this.state.percentComplete}
+            handleTrackScrub={this.handleTrackScrub}
+            percentBuffered={this.state.percentBuffered}
+          />
           <i className="fa fa-2x fa-star" title="Favorite" />
           <MenuItemInfo />
           <MenuItemPreferences
@@ -243,41 +251,6 @@ class App extends Component {
             </div>
             <div id="next" onClick={this.nextTrack} title="Play Next">
               <i className="fa fa-forward fa-2x" />
-            </div>
-          </div>
-
-          <div id="wrapper">
-            <div id="player">
-              <button
-                id="pButton"
-                type="button"
-                className={`btn ${this.state.isPlaying ? 'play' : 'pause'}`}
-                onClick={this.togglePlay}
-              >
-                <span className="screenReader">Toggle Play</span>
-              </button>
-              <div className="timelineWrap">
-                <label htmlFor="timeline" className="screenReader">
-                  Track timeline
-                </label>
-                <input
-                  id="timeline"
-                  name="timeline"
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value={this.state.percentComplete}
-                  onChange={this.handleTrackScrub}
-                  style={{
-                    background: `linear-gradient(to right, rgba(0,0,0,.5) ${
-                      this.state.percentBuffered
-                    }%, rgba(0,0,0,.25) ${
-                      this.state.percentBuffered
-                    }%, rgba(0,0,0,.25))`
-                  }}
-                />
-              </div>
             </div>
           </div>
 
