@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../css/App.css'
 import { openings, endings, osts, shuffle } from '../data'
-import { keys } from '../constants'
+import { keys, iconSize } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 import Player from './Player'
@@ -249,37 +249,33 @@ class App extends Component {
 
         <div className="bottom-bar">
           <div className="bottom-left">
-            <div title="Play Previous">
-              <TiArrowLeftThick
-                onClick={this.previousTrack}
-                size={35}
-                className="icons"
-              />
-            </div>
-            <div title="Play Next">
-              <TiArrowRightThick
-                onClick={this.nextTrack}
-                size={35}
-                className="icons"
-              />
-            </div>
+            <button
+              onClick={this.previousTrack}
+              title="Play Previous"
+              className="btn"
+            >
+              <TiArrowLeftThick size={iconSize} className="icons" />
+            </button>
+            <button onClick={this.nextTrack} title="Play Next" className="btn">
+              <TiArrowRightThick size={iconSize} className="icons" />
+            </button>
           </div>
 
           <div className="botton-right">
-            <div title="Play Again">
-              <FaRefresh
-                onClick={this.restartTrack}
-                size={35}
-                className="icons"
-              />
-            </div>
-            <div title="Toggle Fullscreen">
-              <FaExpand
-                onClick={this.toggleFullscreen}
-                size={35}
-                className="icons"
-              />
-            </div>
+            <button
+              onClick={this.restartTrack}
+              title="Replay Track"
+              className="btn"
+            >
+              <FaRefresh size={iconSize} className="icons" />
+            </button>
+            <button
+              onClick={this.toggleFullscreen}
+              title="Toggle Fullscreen"
+              className="btn"
+            >
+              <FaExpand size={iconSize} className="icons" />
+            </button>
           </div>
         </div>
       </div>

@@ -9,3 +9,5 @@ export const keys = {
   RIGHT_ARROW: 39,
   DOWN_ARROW: 40
 }
+
+export const iconSize = 35
