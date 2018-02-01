@@ -244,7 +244,6 @@ class App extends Component {
               <TiArrowLeftThick
                 onClick={this.previousTrack}
                 size={35}
-                title="Play Previous"
                 className="icons"
               />
             </div>
@@ -252,7 +251,6 @@ class App extends Component {
               <TiArrowRightThick
                 onClick={this.nextTrack}
                 size={35}
-                title="Play Next"
                 className="icons"
               />
             </div>
