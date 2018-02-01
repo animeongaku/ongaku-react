@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ExpandToggle from './ExpandToggle'
 import '../css/MenuItem.css'
+import { MdSettings } from 'react-icons/lib/md'
 
 export default class MenuItemPreferences extends Component {
   render() {
@@ -8,12 +9,8 @@ export default class MenuItemPreferences extends Component {
     return (
       <ExpandToggle>
         {(state, props) => (
-          <div className="menuItem">
-            <i
-              className="fa fa-cog fa-2x"
-              title="Preferences"
-              onClick={props.toggle}
-            />
+          <div className="menuItem" title="Preferences">
+            <MdSettings className="icons" size={35} onClick={props.toggle} />
             <div
               className="menuDropdown padded"
               style={{ display: state.expanded ? '' : 'none' }}

@@ -16,27 +16,25 @@ body {
   height: 100%;
 }
 
-.play {
-  background: url('/img/play.png');
+/* CSS for icons used in the page */
+.icons {
+  color: #fff;
+  padding: 0 15px;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+  transition: all 0.2s;
 }
-.pause {
-  background: url('/img/pause.png');
+
+.icons:hover {
+  transform: scale(1.2);
+  transition: all 0.2s;
+  color: #bbb;
 }
-.back {
-  background-image: url('/img/previous-button.png');
+
+.icons:active {
+  color: #000;
 }
-.next {
-  background-image: url('/img/next-button.png');
-}
-.restart {
-  background-image: url('/img/restart.png');
-}
-.goFullscreen {
-  background-image: url('/img/go-fullscreen.png');
-}
-.cancelFullscreen {
-  background-image: url('/img/cancel-fullscreen.png');
-}
+
 /*CSS for track-name display*/
 #track-name {
   width: auto;

@@ -4,6 +4,8 @@ import { openings, endings, osts, shuffle } from '../data'
 import { keys } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
+import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/lib/ti'
+import { FaRefresh, FaExpand } from 'react-icons/lib/fa'
 
 const initialData = shuffle([...openings, ...endings, ...osts])
 
@@ -49,6 +51,7 @@ class App extends Component {
     const currentTrackIndex =
       ++this.state.currentTrackIndex % this.state.data.length
     const track = this.state.data[currentTrackIndex]
+    console.log(track)
     this.setState({
       currentTrackIndex,
       src: track.link,
@@ -222,7 +225,6 @@ class App extends Component {
           onProgress={this.progressUpdate}
         />
         <div className="top-bar">
-          <i className="fa fa-2x fa-star" title="Favorite" />
           <MenuItemInfo />
           <MenuItemPreferences
             togglePreferenceState={this.togglePreference}
@@ -238,11 +240,21 @@ class App extends Component {
 
         <div className="bottom-bar">
           <div className="bottom-left">
-            <div id="previous" onClick={this.previousTrack} title="Play Last">
-              <i className="fa fa-backward fa-2x" />
+            <div title="Play Previous">
+              <TiArrowLeftThick
+                onClick={this.previousTrack}
+                size={35}
+                title="Play Previous"
+                className="icons"
+              />
             </div>
-            <div id="next" onClick={this.nextTrack} title="Play Next">
-              <i className="fa fa-forward fa-2x" />
+            <div title="Play Next">
+              <TiArrowRightThick
+                onClick={this.nextTrack}
+                size={35}
+                title="Play Next"
+                className="icons"
+              />
             </div>
           </div>
 
@@ -282,17 +294,18 @@ class App extends Component {
           </div>
 
           <div className="botton-right">
-            <div id="restart" title="Play Again">
-              <i
-                className="fa fa-refresh fa-2x"
+            <div title="Play Again">
+              <FaRefresh
                 onClick={this.restartTrack}
-                title="Play Again"
+                size={35}
+                className="icons"
               />
             </div>
-            <div id="fullscreen-button" title="Toggle Fullscreen">
-              <i
-                className="fa fa-arrows-alt fa-2x"
+            <div title="Toggle Fullscreen">
+              <FaExpand
                 onClick={this.toggleFullscreen}
+                size={35}
+                className="icons"
               />
             </div>
           </div>
