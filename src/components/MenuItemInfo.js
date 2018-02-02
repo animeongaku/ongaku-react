@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ExpandToggle from './ExpandToggle'
 import '../css/MenuItem.css'
+import { MdInfoOutline } from 'react-icons/lib/md'
+import { iconSize } from '../constants'
 
 export default class MenuItemInfo extends Component {
   render() {
@@ -8,13 +10,15 @@ export default class MenuItemInfo extends Component {
       <ExpandToggle>
         {(state, props) => (
           <div className="menuItem">
-            <i
-              className="fa fa-info-circle fa-2x infoImg"
+            <button
+              className="btn"
               onMouseEnter={props.toggle}
               onMouseLeave={props.toggle}
               onFocus={props.toggle}
               onBlur={props.toggle}
-            />
+            >
+              <MdInfoOutline className="icons" size={iconSize} />
+            </button>
             <div
               className="menuDropdown"
               style={{ display: state.expanded ? '' : 'none' }}
