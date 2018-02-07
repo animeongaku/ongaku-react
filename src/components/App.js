@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
-import './App.css'
-import { openings, endings, osts, shuffle } from './data'
-import { keys } from './constants'
+import '../css/App.css'
+import { openings, endings, osts, shuffle } from '../data'
+import { keys, iconSize } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
+import Player from './Player'
+import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/lib/ti'
+import { FaRefresh, FaExpand } from 'react-icons/lib/fa'
 
 const initialData = shuffle([...openings, ...endings, ...osts])
 
@@ -49,6 +52,7 @@ class App extends Component {
     const currentTrackIndex =
       ++this.state.currentTrackIndex % this.state.data.length
     const track = this.state.data[currentTrackIndex]
+    console.log(track)
     this.setState({
       currentTrackIndex,
       src: track.link,
@@ -221,7 +225,15 @@ class App extends Component {
           onTimeUpdate={this.timeUpdate}
           onProgress={this.progressUpdate}
         />
+
+        {/* Top-bar components */}
         <div className="top-bar">
+          <Player
+            percentComplete={this.state.percentComplete}
+            handleTrackScrub={this.handleTrackScrub}
+            percentBuffered={this.state.percentBuffered}
+          />
+          <i className="fa fa-2x fa-star" title="Favorite" />
           <MenuItemInfo />
           <MenuItemPreferences
             togglePreferenceState={this.togglePreference}
@@ -238,67 +250,31 @@ class App extends Component {
         <div className="bottom-bar">
           <div className="bottom-left">
             <button
-              className="btn back"
-              type="button"
               onClick={this.previousTrack}
+              title="Play Previous"
+              className="btn"
             >
-              <span className="screenReader">Play Last</span>
+              <TiArrowLeftThick size={iconSize} className="icons" />
             </button>
-            <button className="btn next" type="button" onClick={this.nextTrack}>
-              <span className="screenReader">Play Next</span>
+            <button onClick={this.nextTrack} title="Play Next" className="btn">
+              <TiArrowRightThick size={iconSize} className="icons" />
             </button>
-          </div>
-
-          <div id="wrapper">
-            <div id="player">
-              <button
-                id="pButton"
-                type="button"
-                className={`btn ${this.state.isPlaying ? 'play' : 'pause'}`}
-                onClick={this.togglePlay}
-              >
-                <span className="screenReader">Toggle Play</span>
-              </button>
-              <div className="timelineWrap">
-                <label htmlFor="timeline" className="screenReader">
-                  Track timeline
-                </label>
-                <input
-                  id="timeline"
-                  name="timeline"
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value={this.state.percentComplete}
-                  onChange={this.handleTrackScrub}
-                  style={{
-                    background: `linear-gradient(to right, rgba(0,0,0,.5) ${this
-                      .state.percentBuffered}%, rgba(0,0,0,.25) ${this.state
-                      .percentBuffered}%, rgba(0,0,0,.25))`
-                  }}
-                />
-              </div>
-            </div>
           </div>
 
           <div className="botton-right">
             <button
-              id="restart"
-              className="btn restart"
               onClick={this.restartTrack}
+              title="Replay Track"
+              className="btn"
             >
-              <span className="screenReader">Restart track</span>
+              <FaRefresh size={iconSize} className="icons" />
             </button>
             <button
-              id="fullscreen-button"
-              type="button"
-              className={`btn ${this.state.isFullscreen
-                ? 'cancelFullscreen'
-                : 'goFullscreen'}`}
               onClick={this.toggleFullscreen}
+              title="Toggle Fullscreen"
+              className="btn"
             >
-              <span className="screenReader">Toggle Fullscreen</span>
+              <FaExpand size={iconSize} className="icons" />
             </button>
           </div>
         </div>

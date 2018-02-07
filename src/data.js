@@ -3,8 +3,7 @@ export const openings = [
     link:
       'http://67.159.62.2/anime_ost/tokyo-ghoul-op-single-unravel/eepprhqwvp/01%20-%20unravel.mp3',
     name: 'Tokyo Ghoul - Unravel',
-    img:
-      'https://wallpaperscraft.com/image/tokyo_ghoul_kaneki_ken_man_reflection_100594_1920x1080.jpg'
+    img: 'https://images8.alphacoders.com/596/596889.jpg'
   },
 
   {
@@ -25,15 +24,53 @@ export const openings = [
   {
     link: 'http://lyricmp3skull.org/s363640c/file/op-3/294904496.mp3',
     name: 'Bongou Stray Dogs 2 OP-1',
-    img: 'https://pbs.twimg.com/media/C-FAE86UQAAdckd.jpg'
+    img: 'https://images4.alphacoders.com/739/thumb-1920-739891.png'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/bleach-op1-single-orange-range-asterisk/folyoxgrmj/01-asterisk-.mp3',
+    name: 'Bleach OP1 - Asterisk',
+    img:
+      'https://1.bp.blogspot.com/-pCRlFldxgMA/TrVTSkwb9xI/AAAAAAAAAZ4/vHnEfPFcaY4/s1600/chibi+bleach+character-bleach+wallpaper.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/bleach-op2-single-d-tecnolife-uverworld-/lunnibictb/01-d-tecnolife.mp3',
+    name: 'Bleach OP2 - Tecnolife',
+    img:
+      'http://www.news-anime.com/wp-content/uploads/2009/01/pic1_3039jpeg.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/bleach-op3-single-ichirin-no-hana/chhvdszdtp/01%20-%20Ichirin%20no%20Hana.mp3',
+    name: 'Bleach OP3 - Ichirin no Hana',
+    img:
+      'http://pm1.narvii.com/6241/6278d669931658527be32be68391fc8dd23bcea6_hq.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/bleach-tonight-tonight-tonight/hfdztydmtc/01.-tonight-tonight-tonight.mp3',
+    name: 'Bleach OP4 - Tonight Tonight Tonight',
+    img: 'https://www.walldevil.com/wallpapers/a38/bleach-orihime-inoue.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/bleach-op5-single-rolling-star/bdjbvdmaar/01%20-%20Rolling%20star.mp3',
+    name: 'Bleach OP5 - Rolling Star',
+    img:
+      'http://www.animacity.ru/sites/default/files/users/9086/photo/2014/141/Bleach-Kurosaci-Ichigo-1800x2880.jpg'
   },
 
   {
     link:
       'http://lyricmp3skull.org/s363640c/file/danganronpa-anime-op-tv-size/249496430.mp3',
     name: 'Danganronpa The Animation OP',
-    img:
-      'http://data.freehdw.com/danganronpa-2-goodbye-despair-ps-vita-characters.jpg'
+    img: 'https://i.ytimg.com/vi/guJYoQ5gQ7s/maxresdefault.jpg'
   },
 
   {
@@ -82,21 +119,20 @@ export const openings = [
 
   {
     link:
-      'http://yt-files.com/yt-dd.php?id=IK6hHzAPhuI&hash=197a719a72e9649ea7f63c4b17abdabc&name=Haikyuu!! - Opening 2 (1080p)',
+      'https://www.yt-download.org/@download/192-5a14445318675-7416000/mp3/Ub9DIu9wfLA/Haikyuu%2BOP2%2B%25E2%2597%258FFull.mp3',
     name: 'Haikyuu!! First Season OP2',
     img: 'https://images8.alphacoders.com/692/thumb-1920-692745.png'
   },
 
   {
-    link:
-      "http://yt-files.com/yt-dd.php?id=0m-JsMXxXsQ&hash=1163f36946da6ba620dc63dc93d86069&name=Haikyuu Season 2 Op 1 I'm a believer full",
+    link: 'https://goo.gl/dFW5Lz',
     name: "Haikyuu!! Second Season - I'm a believer",
     img: 'https://www.thebitbag.com/wp-content/uploads/2016/03/Karasuno2.png'
   },
 
   {
     link:
-      'http://yt-files.com/yt-dd.php?id=xP5_SnR75ZU&hash=81f36d506e80f82f1bf2eab97aab858a&name=Haikyuu!! 3rd Season Opening 1 “Hikari Are” (BURNOUT SYNDROMES)',
+      'http://yt2converter.com/yt-dd.php?id=POJJ0giy4UI&hash=afc857ab6b040fe7825187825343009a&t=5&name=Haikyuu!!%20Season%203%20opening%20Full%E3%80%8EBURNOUT%20SYNDROMES%20-%20Hikari%20Are%E3%80%8F',
     name: 'Haikyuu!! Third Season - Hikari Are',
     img: 'http://i.imgur.com/qvGY6zf.png'
   },
@@ -104,8 +140,38 @@ export const openings = [
   {
     link:
       'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-op1-single-again/zsodgdfokq/01%20-%20again.mp3',
-    name: 'Fullmetal Alchemist Brotherhood - Again',
+    name: 'Fullmetal-Alchemist-Brotherhood OP1 - Again',
     img: 'http://i0.kym-cdn.com/photos/images/original/000/821/013/179.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-op2-single-hologram/bckimqttws/01%20-%20Hologram.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood OP2 - Hologram',
+    img: 'http://jonvilma.com/images/fullmetal-alchemist-2.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-op3-single-golden-time-lover/numnozkxdo/01%20-%20Golden%20Time%20Lover.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood OP3 - Golden Time Lover',
+    img:
+      'http://pm1.narvii.com/6276/77afa9042fd4a32f41a70d34b242adaa8bde8b22_hq.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-op4-single-period/wcjbtbdgdd/01%20-%20Period.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood OP4 - Period',
+    img:
+      'http://i1.wp.com/toplistsmania.com/wp-content/uploads/2016/10/Fullmtal-Alchemist.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-op5-single-rain/buwbuqlitk/01.%20Rain.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood OP5 - Rain',
+    img: 'http://quackpot.com/albums/album30/FMA_Brotherhood00004.png'
   },
 
   {
@@ -397,15 +463,13 @@ export const openings = [
   },
 
   {
-    link:
-      'http://yt-files.com/yt-dd.php?id=x8CfQ3P-Z9w&hash=1c2320258ccb4b548daa83d0cbc1ec79&name=Naruto%20Shippuden%20Opening%2018',
+    link: 'https://eeu.ymcdn.cc/73535503af6ba157759ff356b87be5f9/YISH07M62rQ',
     name: 'Naruto Shippuden OP18 - Line',
     img: 'https://i.ytimg.com/vi/ZZaoDACJUsY/maxresdefault.jpg'
   },
 
   {
-    link:
-      'http://yt-files.com/yt-dd.php?id=ZrBqxZ1T_5M&hash=67bfefcf768c91f02605582066ed83dc&name=Naruto%20Shippuden%20Opening%2019%20-%20Blood%20Circulator%20(Extended%20Version)',
+    link: 'https://goo.gl/P1D9NS',
     name: 'Naruto Shippuden OP19 - Blood Circulator',
     img:
       'http://brutalgamer.com/wp-content/uploads/2016/10/Naruto-vs-Sasuke.jpg'
@@ -413,7 +477,7 @@ export const openings = [
 
   {
     link:
-      'http://mp3fb.com/wp-includes/inc/down.php?id=NYRrKS5rMkBK7PC-Nf5Hw-yxxGfRKdPhvmRMZcDkrPg&t=Anly.%2BNaruto%2BShippuden%2B%E3%83%8A%E3%83%AB%E3%83%88%2B-%2B%E7%96%BE%E9%A2%A8%E4%BC%9D%2BOP%2BOpening%2B20%2BFull%2B%28kara%2Bno%2Bkokoro%29.mp3&hash=true',
+      'https://www.yt-download.org/@download/320-5a1c095f85898-3800000/mp3/8rWVoEsj2vw/Naruto%2Bshippuden%2Bopening%2B20.mp3',
     name: 'Naruto Shippuden OP20 - Empty Heart',
     img:
       'https://66.media.tumblr.com/14ea758c966a129641d80c9fb9f693b3/tumblr_og4xrgQkex1vgv3yxo5_1280.png'
@@ -494,7 +558,7 @@ export const openings = [
       'http://67.159.62.2/anime_ost/shigatsu-wa-kimi-no-uso-op-single-hikaru-nara/pubfkzxlrk/01%20-%20Hikaru%20Nara.mp3',
     name: 'Shigatsu wa Kimi no Uso OP Single - Hikaru Nara',
     img:
-      'http://tp.lingyu.me/bz/uploads/2016/08/www.lingyu.me_20160808081904118.jpg'
+      'https://underthehoshizora.files.wordpress.com/2015/03/maxresdefault2.jpg?w=1920&h=1080&crop=1'
   },
 
   {
@@ -537,13 +601,6 @@ export const openings = [
 
   {
     link:
-      'https://www.youtubeinmp3.com/fetch/?video=https://www.youtube.com/watch?v=tHG6pXGxxIE',
-    name: 'Dragon Ball Super OP 2',
-    img: 'https://images2.alphacoders.com/831/831309.png'
-  },
-
-  {
-    link:
       'http://67.159.62.2/anime_ost/steins-gate-op-single-hacking-to-the-gate/jntezehukc/01%20Hacking%20to%20the%20Gate.mp3',
     name: 'Steins;Gate OP Single - Hacking to the Gate',
     img: 'https://images2.alphacoders.com/224/thumb-1920-224760.jpg'
@@ -553,8 +610,7 @@ export const openings = [
     link:
       'http://67.159.62.2/anime_ost/gintama-op2-single-tooi-nioi/dgrvnaggyd/01%20-%20Tooi%20Nioi.mp3',
     name: 'Gintama OP2 - Tooi Nioi',
-    img:
-      'https://animejanaika.files.wordpress.com/2011/04/horriblesubs-sket-dance-01-720p-mkv_snapshot_23-45_2011-04-11_01-59-08.jpg'
+    img: 'https://awesomereviews.ru/wp-content/uploads/2017/07/Gintama.jpg'
   },
 
   {
@@ -580,8 +636,7 @@ export const openings = [
   },
 
   {
-    link:
-      'http://yt-files.com/yt-dd.php?id=m4O2VS4511Y&hash=29f2d27354eb0d248618a2b398d85904&name=Shingeki%20no%20Kyojin%20Attack%20on%20Titan%20Opening%20OP%20Guren%20no%20Yumiya%20Linked%20Horizon%20Extended%20Ver',
+    link: 'https://goo.gl/ph7Fhm',
     name: 'Attack On Titan - Guren No Yumiya',
     img: 'https://k43.kn3.net/taringa/D/D/8/D/C/6/t_good/767.jpg'
   },
@@ -598,8 +653,103 @@ export const openings = [
     link:
       'http://67.159.62.2/anime_ost/code-geass-hangyaku-no-lelouch-op2-single-kaidoku-funou/itgzwjatxy/01%20-%20Kaidoku%20Funou.mp3',
     name: 'Code Geass (Hangyaku no Lelouch) OP2 - Kaidoku Funou',
+    img: 'http://cdn.pcwallart.com/images/code-geass-lelouch-wallpaper-2.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-3/muvenwocfa/09-meg-mell-cockool-mix-full-ver.-.mp3',
+    name: 'Clannad OP1 - Meg Mell',
     img:
-      'http://yumenomangas.free.fr/codegeass/walls/big/YumeNoMangas.codegeass.0078.jpg'
+      'http://wallpapersdsc.net/wp-content/uploads/2017/04/Clannad-Computer-Backgrounds.png'
+  },
+
+  {
+    link: 'https://s0.vocaroo.com/media/download_temp/Vocaroo_s0HM0lH5nwdX.mp3',
+    name: 'Full Metal Panic OP - Tomorrow',
+    img:
+      'http://www.wallpapers4u.org/wp-content/uploads/girl_full_metal_panic_nice_smile_gesture_24709_1920x1080.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/g95vnwebcmb93nv/Re-Zero%20Kara%20Hajimeru%20Isekai%20Seikatsu%20Opening%20FULL.mp3?dl=0',
+    name: 'Re:Zero OP1 - Kara Hajimeru Isekai Seikatsu',
+    img: 'https://image.tmdb.org/t/p/original/n6YYb2jMN0UE1YNJcPSHnwX7vMq.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/3l41690wfwq3vvo/real%20bleach%20opening%201%20orange%20range%20asterisk.m4a?dl=0',
+    name: 'Bleach OST 1 - Asterisk - Orange Range',
+    img: 'https://i.ytimg.com/vi/xWUKT8CY978/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/27m8fylvfa42gsa/Inazuma%20Eleven%20Opening%20Theme%20Song.m4a?dl=0 ',
+    name: 'Inazuma Eleven OP - Opening Theme Song',
+    img: 'https://images4.alphacoders.com/675/thumb-1920-675017.jpg'
+  },
+
+  {
+    link:
+      'http://66.90.93.122/ost/one-punch-man-original-soundtrack/lafivvty/01%20THE%20HERO%21%21-OKORERU%20KOBUSHI%20NI%20HI%20WO%20TSUKERO-.mp3',
+    name: 'One Punch Man OP - Hero',
+    img:
+      'https://initiate.alphacoders.com/download/wallpaper/670899/images/jpg/1988977696'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ii-op-single-ignite/zxifjhyesp/01%20-%20IGNITE.mp3',
+    name: 'Sword Art Online II OP Single - IGNITE',
+    img:
+      'http://i2.wp.com/otabibo.com/wp-content/uploads/2016/09/f81d30822dce760c948c10f649296f6d.jpg?fit=1920%2C1080'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ii-op2-single-courage/faktzemrkz/01%20-%20courage.mp3',
+    name: 'Sword Art Online II OP2 Single - courage',
+    img:
+      'http://www.gamesvillage.it/wp-content/uploads/2016/08/Realization-01.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-op-single-crossing-field/smkuzghlnl/01%20-%20crossing%20field.mp3',
+    name: 'Sword Art Online OP Single - crossing field',
+    img: 'https://i.ytimg.com/vi/J08aKXztgCs/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-op2-single-innocence/hpzyswvouy/01%20-%20INNOCENCE.mp3',
+    name: 'Sword Art Online OP2 Single - INNOCENCE',
+    img: 'https://i.ytimg.com/vi/1KJ_zIA6cvE/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/one-piece-op10-single-we-are/kcurabkakv/02%20-%20We%20Are%21.mp3',
+    name: 'One Piece OP1 - We Are!',
+    img:
+      'https://img00.deviantart.net/a893/i/2013/213/b/9/one_piece___we_are__by_sergiart-d6g6a0a.png'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/k385z7a5ur6uph5/Boku%20no%20Hero%20Academia%20Season2%20OP1.mp3?dl=1',
+    name: 'Boku No Hero Academia 2 OP - Peace Sign',
+    img: 'https://s10.postimg.org/4lomw3bax/5_Lxi5gd.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/ah4ecd6qbidzbrh/Boku%20no%20Hero%20Academia%20Season2%20OP2.mp3?dl=1',
+    name: 'Boku No Hero Academia 2 OP - Sora ni Utaeba',
+    img: 'https://s10.postimg.org/wlsqgijy1/1280x720-_Pd_G.jpg'
   }
 ]
 
@@ -613,7 +763,7 @@ export const endings = [
 
   {
     link:
-      'https://www.youtubeinmp3.com/fetch/?video=https://www.youtube.com/watch?v=n-or12ftZB8',
+      'http://67.159.62.2/anime_ost/magi-kingdom-of-magic-ed-single-eden-2013-/uvnfngdufq/01.-eden.mp3',
     name: 'Magi S2 ED-1',
     img: 'http://s2.narvii.com/image/xza6vkrba26ae3xlwahgdo6d72piihue_hq.jpg'
   },
@@ -773,13 +923,94 @@ export const endings = [
     name: 'Code Geass (Hangyaku no Lelouch) ED2 - Mosaic Kakera',
     img:
       'http://animewallpaperstock.com/wallpaper/02ka/code-geass/code-geass0151.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-ed-single-uso/lbexbhjzxa/01%20-%20Uso.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood ED1 - Uso',
+    img:
+      'http://trunkweed.com/uploads/posts/images/1305215-fullmetal-alchemist-and-the-broken-angel.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-ed2-single-let-it-out/qnailtliwd/01%20-%20LET%20IT%20OUT.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood ED2 - Let It Out',
+    img:
+      'https://nefariousreviews.files.wordpress.com/2015/12/fullmetal-alchemist-brotherhood-al.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-ed3-single-tsunaida-te/orsurintit/01%20-%20Tsunaida%20Te.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood ED3 - Tsunaida Te',
+    img: 'http://hd.tuzi123.com/11884/10/06/02/465_9008976_5e0b20fc1e490fe.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-ed4-single-shunkan-sentimental/gupinmiinq/01%20-%20Shunkan%20Sentimental.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood ED4 - Shunkan Sentimental',
+    img: 'https://pbs.twimg.com/media/CoQ-kLVUEAAinZC.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/fullmetal-alchemist-brotherhood-ed5-single-ray-of-light/ltusbwxdbx/01%20-%20RAY%20OF%20LIGHT.mp3',
+    name: 'Fullmetal-Alchemist-Brotherhood ED5 - Ray Of Light',
+    img:
+      'http://animuverse.com/wp-content/uploads/2016/08/vlcsnap-2010-07-06-13h35m55s35.png'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/pz214766ugomysq/Sayuri%20-%20Sore%20wa%20Chiisana%20Hikari%20no%20Youna%20%20Boku%20Dake%20Ga%20Inai%20Machi%20%28ERASED%29%20FULL%20ENDING.mp3?dl=0',
+    name:
+      'Boku Dake Ga Inai Machi (Erased) ED - Sore wa Chiisana Hikari no Youna',
+    img: 'https://images8.alphacoders.com/697/thumb-1920-697276.png'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ed-single-yume-sekai/mgksxgdvtu/01%20-%20Yume%20Sekai.mp3',
+    name: 'Sword Art Online ED Single - Yume Sekai',
+    img:
+      'https://s18.postimg.org/n4nz8mu55/Yume_Sekai_anime_limited_pressing.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ed2-single-overfly/zoycixihyv/01%20-%20Overfly.mp3',
+    name: 'Sword Art Online ED2 Single - Overfly',
+    img: 'https://images4.alphacoders.com/797/797483.png'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ii-ed-single-startear/jkzurggqtj/01%20-%20Startear.mp3',
+    name: 'Sword Art Online II ED Single - Startear',
+    img: 'http://pbs.twimg.com/media/CmhLL-EUIAAkP6d.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/sword-art-online-ii-ed2-ed3-single-shirushi/gybtjsvnva/01%20-%20Shirushi.mp3',
+    name: 'Sword Art Online II ED2 Single - Shirushi',
+    img: 'https://i.ytimg.com/vi/AsrjmNIoGNw/maxresdefault.jpg'
+  },
+
+  {
+    link: 'https://www.televisiontunes.com/song/download/20853',
+    name: 'One Piece ED1 - Memories',
+    img: 'https://i.ytimg.com/vi/4fZvK_I-qEE/maxresdefault.jpg'
   }
 ]
 
 export const osts = [
   {
     link:
-      'http://66.90.93.122/ost/death-note-original-soundtrack/fghgpcdtbm/04-l-s-theme.mp3',
+      'http://66.90.93.122/ost/death-note-original-soundtrack/hhhpvhnq/04%20L%27s%20Theme.mp3',
     name: "L's Theme A",
     img:
       'https://s-media-cache-ak0.pinimg.com/originals/ea/90/c6/ea90c6d4e0245946a0119cf246de4324.jpg'
@@ -787,21 +1018,21 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/death-note-original-soundtrack/ftrosjnhdv/03-light-s-theme.mp3',
+      'http://66.90.93.122/ost/death-note-original-soundtrack/pnaxqmiw/03%20Light%27s%20Theme.mp3',
     name: "Light's Theme",
     img: 'https://www.walldevil.com/wallpapers/a91/death-note-yagami.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/death-note-original-soundtrack/drakbyuujm/19-death-note-theme.mp3',
+      'http://66.90.93.122/ost/death-note-original-soundtrack/youzpnhv/19%20Death%20note%20Theme.mp3',
     name: 'Death Note Main Theme',
-    img: 'http://wallpoper.com/images/00/31/67/12/death-note_00316712.jpg'
+    img: 'http://popnerdtv.com/wp-content/uploads/2017/06/deathnote.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/death-note-original-soundtrack/cnpikmfqsu/11-l-s-theme-b.mp3',
+      'http://66.90.93.122/ost/death-note-original-soundtrack/vrukdjls/11%20L%27s%20Theme%20B.mp3',
     name: "L's theme B",
     img: 'http://cdn.wallpapersafari.com/87/52/DSgHjT.jpg'
   },
@@ -875,7 +1106,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/vhzfijqoki/02-i-said-i-m-naruto.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/vhzfijqoki/02-i-said-i-m-naruto.mp3',
     name: "Naruto OST - I Said I'm Naruto ",
     img:
       'https://www.senpuu.net/system/dragonfly/production/2017/06/01/98yy1v9xt7_naruto364.jpg'
@@ -883,14 +1114,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/rdpdhlompz/03-nine-tail-demon-fox.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/rdpdhlompz/03-nine-tail-demon-fox.mp3',
     name: 'Naruto OST - Nine Tail Demon Fox',
     img: 'http://wallpapercave.com/wp/pE3Ai6O.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/qcwtiiccaa/04-morning.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/qcwtiiccaa/04-morning.mp3',
     name: 'Naruto OST - Morning',
     img:
       'https://orig06.deviantart.net/2171/f/2014/337/c/9/hidden_leaf_village__landscape__13_by_iennidesign-d88l3ym.jpg'
@@ -898,7 +1129,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/etcnubxudk/07-the-raising-fighting-spirit.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/etcnubxudk/07-the-raising-fighting-spirit.mp3',
     name: 'Naruto OST - The Raising Fighting Spirit',
     img:
       'http://vignette4.wikia.nocookie.net/naruto/images/c/c2/Young_sasuke_and_Naruto.png/revision/latest?cb=20120830130604'
@@ -906,14 +1137,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/hhcuyfcpgw/08-sadness-and-sorrow.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/hhcuyfcpgw/08-sadness-and-sorrow.mp3',
     name: 'Naruto OST - Sadness And Sorrow',
     img: 'https://static.zerochan.net/Uzumaki.Naruto.full.958657.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/nmcujokwke/09-loneliness.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/nmcujokwke/09-loneliness.mp3',
     name: 'Naruto OST - Loneliness',
     img:
       'https://otakukart.com/animeblog/wp-content/uploads/2016/02/maxresdefault-13.jpg'
@@ -921,15 +1152,15 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/dabcafpszq/10-sakura-s-theme.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/dabcafpszq/10-sakura-s-theme.mp3',
     name: "Naruto OST - Sakura's Theme",
     img:
-      'http://fullhdwallpapersdownload.com/wp-content/uploads/2016/07/cool-sakura-wallpaper.jpg'
+      'http://pm1.narvii.com/6388/688dc608d0225b16e5081b9f202bb23cfd919724_hq.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/gbawqivnpb/11-kakashi-s-theme.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/gbawqivnpb/11-kakashi-s-theme.mp3',
     name: "Naruto OST - Kakashi's Theme",
     img:
       'https://i.pinimg.com/originals/94/8c/d9/948cd97ecf5c36b435ece03c70efcd75.jpg'
@@ -937,7 +1168,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/jcughvcypp/13-go-go-naruto-.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/jcughvcypp/13-go-go-naruto-.mp3',
     name: 'Naruto OST - GO GO Naruto!!',
     img:
       'https://img15.deviantart.net/067b/i/2012/308/4/3/naruto_go_by_mysterynvfc-d5jx3jm.jpg'
@@ -945,7 +1176,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/cwezsdjqpu/14-evening.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/cwezsdjqpu/14-evening.mp3',
     name: 'Naruto OST - Evening',
     img:
       'http://www.wallpaperup.com/uploads/wallpapers/2015/05/31/706570/big_thumb_a885d9829a4035a8763a70d9915c99f1.jpg'
@@ -953,14 +1184,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/fxlwwqqoch/16-need-to-be-strong.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/fxlwwqqoch/16-need-to-be-strong.mp3',
     name: 'Naruto OST - Need To Be Strong',
     img: 'https://images4.alphacoders.com/686/686121.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/ewfmymerai/17-bad-situation.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/ewfmymerai/17-bad-situation.mp3',
     name: 'Naruto OST - Bad Situation',
     img:
       'http://pm1.narvii.com/6406/4263565bb01087eccc3026ed62f906e4311ae81f_hq.jpg'
@@ -968,14 +1199,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/ectoblukeo/18-strong-and-strike.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/ectoblukeo/18-strong-and-strike.mp3',
     name: 'Naruto OST - Strong and Strike',
     img: 'http://fanaru.com/naruto/image/22540-naruto-naruto-and-kyuubi.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/ebnrphjapc/19-turn-over.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/ebnrphjapc/19-turn-over.mp3',
     name: 'Naruto OST - Turn Over',
     img:
       'http://3.bp.blogspot.com/-1bN1ysG4e3I/U_6xmmqr4bI/AAAAAAAAJuU/3zW0CeGwpoE/s1600/Naruto-30741.jpg'
@@ -983,7 +1214,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/uapsuzckir/20-victory.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/uapsuzckir/20-victory.mp3',
     name: 'Naruto OST - Victory',
     img:
       'https://orig01.deviantart.net/0301/f/2011/192/8/5/naruto_victory_by_itachis999-d3n1zie.png'
@@ -991,14 +1222,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-original-soundtrack-1/hzkhvjents/21-naruto-main-theme.mp3',
+      'http://67.159.62.2/anime_ost/naruto-original-soundtrack-1/hzkhvjents/21-naruto-main-theme.mp3',
     name: 'Naruto Main Theme',
     img: 'http://www2.0zz0.com/2016/02/10/13/679655852.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/uisdrukblh/01.-uchiha-itachi.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/tkgjsxjt/01.%20Uchiha%20Itachi.mp3',
     name: 'Naruto Shippuden OST - Uchiha Itachi',
     img:
       'http://pm1.narvii.com/5924/2123380654426080e2cea490380cac0e60f4c0c6_hq.jpg'
@@ -1006,14 +1237,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/hldmkfayxv/02.-kyuubi-hatsudou.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/xndvublw/02.%20Kyuubi%20Hatsudou.mp3',
     name: 'Naruto Shippuden OST - Kyuubi Hatsudou',
     img: 'https://ih1.redbubble.net/image.316181055.9044/flat,800x800,075,f.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/lwwzwqxgly/03.-yondaime-hokage.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/zucaoksu/03.%20Yondaime%20Hokage.mp3',
     name: 'Naruto Shippuden OST - Yondaime Hokage',
     img:
       'http://pm1.narvii.com/5859/5e9bef51997b17a398f420be85468ec0c5aa1bfe_hq.jpg'
@@ -1021,21 +1252,21 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ncfcuvicrl/04.-chichi-to-haha.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/auamjwsm/04.%20Chichi%20to%20Haha.mp3',
     name: 'Naruto Shippuden OST - Chichi to Haha',
     img: 'https://s26.postimg.org/mdba064bd/Kugutsu_ni_Yadoru_Tamashii.png'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/izfzvcidab/05.-yawarakana-te.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ionveeed/05.%20Yawarakana%20Te.mp3',
     name: 'Naruto Shippuden OST - yawarakana',
     img: 'https://s26.postimg.org/3lhh0qy1l/Naruto_Shippuuden_249-0399.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/jvhwzrsezy/06.-ohtsutsuki-kaguya.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/jnetupmm/06.%20Ohtsutsuki%20Kaguya.mp3',
     name: 'Naruto Shippuden OST - Ohtsutsuki Kaguya',
     img:
       'https://orig03.deviantart.net/e343/f/2014/240/d/3/ohtsutsuki_kaguya_by_rikamello-d7x34li.jpg'
@@ -1043,14 +1274,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/nzuqbzcryc/07.-zetsu-no-theme.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/lgdwejmu/07.%20Zetsu%20no%20Theme.mp3',
     name: 'Naruto Shippuden OST - Zetsu',
     img: 'https://s26.postimg.org/6nonjlvfd/Zetsu_dividing.png'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ygmuwqzvwj/08.-ashura-indra.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/sbkysfot/08.%20Ashura%20-%20Indra.mp3',
     name: 'Naruto Shippuden OST - Ashura-Indra',
     img:
       'https://img00.deviantart.net/75fd/i/2015/062/0/3/naruto_670___indra_and_ashura_by_minatobijuu-d8k99kk.jpg'
@@ -1058,7 +1289,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/hnmxzfjvoz/09.-shuradou.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/qrtdoauu/09.%20Shuradou.mp3',
     name: 'Naruto Shippuden OST - Shuradou',
     img:
       'http://orig08.deviantart.net/8aa2/f/2010/131/a/2/shuradou__wp__by_sargas08.png'
@@ -1066,7 +1297,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/bslhtqnuna/10.-tsumetaki-tsuchi.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/wrqdcatd/10.%20Tsumetaki%20Tsuchi.mp3',
     name: 'Naruto Shippuden OST - Tsumetaki Tsuchi',
     img:
       'https://i.pinimg.com/originals/97/11/a6/9711a637ba98f9835991c58d7dc5eba8.jpg'
@@ -1074,7 +1305,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/kbjxpnrgfj/13.-gouchini-tatsu.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/neuyinzv/13.%20Gouchini%20Tatsu.mp3',
     name: 'Naruto Shippuden OST - Gouchini Tatsu',
     img:
       'https://static.comicvine.com/uploads/original/11123/111232510/5643155-2982767084-56152.jpg'
@@ -1082,7 +1313,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/mcsvkwvrub/14.-isami-aru-monotachi.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/jmsjwake/14.%20Isami%20Aru%20Monotachi.mp3',
     name: 'Naruto Shippuden OST - Isami aru monotachi',
     img:
       'https://s26.postimg.org/4mo04jmmx/Indra_com_Susanoo_vs._Asura_com_Budda.png'
@@ -1090,7 +1321,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/zymzpnhwxa/15.-zutto-miteta.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/rpdogfym/15.%20Zutto%20Miteta.mp3',
     name: 'Naruto Shippuden OST - Zutto Miteta',
     img:
       'http://img1.reactor.cc/pics/post/full/Sasuke-Uchiha-Naruto-Anime-2981061.jpeg'
@@ -1098,7 +1329,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/hmlgjqlhff/16.-kakashi-to-obito.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/twnzlgvm/16.%20Kakashi%20to%20Obito.mp3',
     name: 'Naruto Shippuden OST - Kakashi to Obito',
     img:
       'https://orig00.deviantart.net/83ae/f/2016/240/3/b/kakashi_vs_obito_by_ziuttmen-dafmnz5.jpg'
@@ -1106,7 +1337,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/zgfpmerpfe/17.-tomoyo.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/hbozctjb/17.%20Tomoyo.mp3',
     name: 'Naruto Shippuden OST - Tomoyo',
     img:
       'https://orig06.deviantart.net/0873/f/2016/263/1/0/naruto_oc___tomoyo_uzumaki__very_well__by_apenasumageekdlc-daic5mm.png'
@@ -1114,14 +1345,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/vmrhpfpeeq/18.-eien-ni-nemure.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/crbkmhvh/18.%20Eien%20ni%20Nemure.mp3',
     name: 'Naruto Shippuden OST - Eien ni nemure',
     img: 'https://i.ytimg.com/vi/y9X8yrG5jEU/hq720.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ylsmfbjcfg/19.-obito-no-theme.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/wbtnmzfc/19.%20Obito%20no%20Theme.mp3',
     name: 'Naruto Shippuden OST - Obito Theme',
     img:
       'http://images-eds.xboxlive.com/image?url=wHwbXKif8cus8csoZ03RW_ES.ojiJijNBGRVUbTnZKsoCCCkjlsEJrrMqDkYqs3Mv90mmu7dNwB6aJr4e7HgvnTrT8.wIjzTtJ7o288BZDqUrrUpUSVBrHDXfRShLHH5j6mQEa7lYA1nZtPr7kSgfM6TiF_s8nJITV8A4UrnFJE-&format=png'
@@ -1129,7 +1360,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/vyjxmshtnz/20.-junkyousha.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/naqcrwuu/20.%20Junkyousha.mp3',
     name: 'Naruto Shippuden OST - Junkyousha',
     img:
       'https://lh3.googleusercontent.com/-7KHEdHz5ik8/WSeC0bHjuLI/AAAAAAAAUZk/TYPqi83ow8Qzs5uiTHeUzF8ta2kHBAwYgCJoC/w1280-h720/maxresdefault.jpg'
@@ -1137,7 +1368,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/gmqdguwbkh/21.-nostalgia.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/vdsuptdy/21.%20Nostalgia.mp3',
     name: 'Naruto Shippuden OST - Nostalgia',
     img:
       'https://i.pinimg.com/originals/58/a0/ba/58a0ba48cac80b4ff78da4ca829dafec.png'
@@ -1145,21 +1376,21 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/aavzyltfqv/22.-todokanu-hito-ni.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/mijxfbra/22.%20Todokanu%20Hito%20ni.mp3',
     name: 'Naruto Shippuden OST - Todokanu hito ni',
     img: 'https://images2.alphacoders.com/131/thumb-1920-131690.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/hwnjqghxgq/23.-kaze-to-honoo-no-rondo.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ngymmbiw/23.%20Kaze%20to%20Honoo%20no%20Rondo.mp3',
     name: 'Naruto Shippuden OST - Kaze to honoo no rondo',
     img: 'https://downloads.khinsider.com/album_images/7489-pfwvcixbah.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/zutljdiqkx/24.-michi-wa-tsuzuku.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/fzmhtspg/24.%20Michi%20wa%20Tsuzuku.mp3',
     name: 'Naruto Shippuden OST - Michi wa Tsuzuku',
     img:
       'http://www.wallpapermaiden.com/wallpaper/15173/download/2560x1440/uzumaki-naruto-naruto.jpg'
@@ -1167,7 +1398,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/mlyjhoqxhw/25.-naruto-main-theme-16.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-3/ovkhdius/25.%20NARUTO%20Main%20Theme%2016.mp3',
     name: 'Naruto Shippuden OST - Naruto Main Theme',
     img:
       'https://jnetworkonlinedotcom.files.wordpress.com/2015/06/naruto_exhib.png?w=1200'
@@ -1175,36 +1406,35 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-2/mtishjucnv/20-girei.mp3',
+      'http://67.159.62.2/anime_ost/naruto-shippuuden-original-soundtrack-2/pnkcxdxvud/20%20Girei.mp3',
     name: "Naruto Shippuden OST - Pain's Theme",
     img: 'https://images8.alphacoders.com/508/thumb-1920-508284.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-2/giilhbksof/06-hidan.mp3',
+      'http://67.159.62.2/anime_ost/naruto-shippuuden-original-soundtrack-2/jremurrjbl/06%20Hidan.mp3',
     name: 'Naruto Shippuden OST - Hidan',
     img: 'https://static.zerochan.net/Hidan.full.838112.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-2/yxvtzsddon/27-narukami.mp3',
+      'http://67.159.62.2/anime_ost/naruto-shippuuden-original-soundtrack-2/ghccgrfvpj/27%20Narukami.mp3',
     name: 'Naruto Shippuden OST - Narukami',
     img: 'https://i.ytimg.com/vi/ln_68aqvoP4/maxresdefault.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/oysubjpiuk/03-homecoming.mp3',
+      'http://67.159.62.2/anime_ost/naruto-shippuuden-original-soundtrack/kbfozzisxq/03%20-%20Kikyou.mp3',
     name: 'Naruto Shippuden OST - Homecoming',
-    img:
-      'http://bhstorm.com/i/2016/10/naruto-shippuden-naruto-uzumaki-wallpaper-desktop.jpg'
+    img: 'https://s17.postimg.org/dvodqhkn3/homecoming.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/tkvebqewis/02-heaven-shaking-event.mp3',
+      'http://67.159.62.2/anime_ost/naruto-shippuden-the-movie/lhngzvzake/32-heaven-shaking-event.mp3',
     name: 'Naruto Shippuden OST - Heaven Shaking Event',
     img:
       'http://4.bp.blogspot.com/-AKyq5HeMvHE/Vf9DK7kKcYI/AAAAAAAAEcQ/UFyrf_GDdZo/s1600/1975127-1366x768-%255BDesktopNexus.com%255D.jpg'
@@ -1212,7 +1442,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/mwjlgznkmn/04-experienced-many-battles.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/oxymceiz/04%20-%20Experienced%20Many%20Battles.mp3',
     name: 'Naruto Shippuden OST - Experienced Many Battles',
     img:
       'https://i.pinimg.com/originals/27/fb/9b/27fb9ba5ad2a334e8c04d752527a4fd0.jpg'
@@ -1220,7 +1450,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/oiuijawkob/05-lightning-speed.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/svtslqgd/05%20-%20Lightning%20Speed.mp3',
     name: 'Naruto Shippuden OST - Lightning Speed',
     img:
       'https://wallpaperscraft.com/image/naruto_hatake_kakashi_solo_gloves_leaves_scar_hieroglyph_bandana_lightning_28880_3840x2400.jpg'
@@ -1228,7 +1458,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/duuwemktvw/07-man-of-the-world.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/jtqfshzj/07%20-%20Man%20of%20the%20World.mp3',
     name: 'Naruto Shippuden OST - Man of the World',
     img:
       'https://i.pinimg.com/originals/38/25/50/382550df53cc6cdd2bbfcca399178f74.jpg'
@@ -1236,14 +1466,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/lhxihfonkf/08-departure-to-the-front-lines.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/mjfpdont/08%20-%20Departure%20to%20the%20Front%20Lines.mp3',
     name: 'Naruto Shippuden OST - Departure to the front lines',
     img: 'http://www.zupimages.net/up/16/51/6inw.png'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/tiwcojflsw/09-anger.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/xvzdphjm/09%20-%20Anger.mp3',
     name: 'Naruto Shippuden OST - Anger',
     img:
       'https://dailyanimeart.files.wordpress.com/2014/05/naruto-four-tails-anger-inside-by-nakedmazafakar1.jpg'
@@ -1251,7 +1481,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/wavpuisrmq/10-akatsuki.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/wtxhmmwu/10%20-%20Akatsuki.mp3',
     name: 'Naruto Shippuden OST - Akatsuki',
     img:
       'https://img10.deviantart.net/eb5c/i/2017/130/e/6/naruto_shippuden_the_akatsuki_by_iennidesign-dabzfh8.png'
@@ -1259,7 +1489,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/cgtldyzucr/11-scene-of-a-disaster.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/pocblaau/11%20-%20Scene%20of%20a%20Disaster.mp3',
     name: 'Naruto Shippuden OST - Scene of a disaster',
     img:
       'https://orig01.deviantart.net/bce2/f/2014/345/e/1/hidden_leaf_village__destroyed__8_by_iennidesign-d89g28l.png'
@@ -1267,7 +1497,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/vazjxazncb/14-nightfall.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/tristrah/14%20-%20Nightfall.mp3',
     name: 'Naruto Shippuden OST - Nightfall',
     img:
       'http://images6.fanpop.com/image/polls/1287000/1287315_1380903867649_full.jpg'
@@ -1275,15 +1505,14 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/inbplxhxtj/12-jinchuuriki.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/dxfqfsvt/12%20-%20Jinchuuriki.mp3',
     name: 'Naruto Shippuden OST - Jinchuuriki',
-    img:
-      'https://i0.wp.com/anisubs.id/wp-content/uploads/2017/04/maxresdefault-2.jpg?fit=1920%2C1080'
+    img: 'https://k61.kn3.net/taringa/B/F/B/E/9/0/Beriku/9B7.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/mwunkouwam/18-emergence-of-talents.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/fglpxqjk/18%20-%20Emergence%20of%20Talents.mp3',
     name: 'Naruto Shippuden OST - Emergence of Talents',
     img:
       'http://4.bp.blogspot.com/--XGoUm3ObIk/Usamez9reiI/AAAAAAAAB_Q/QR19v1EC9VU/s1600/38707_117015618349645_100001236223877_110884_6983127_n.jpg'
@@ -1291,7 +1520,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/aohwxmknop/19-despair.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/jrtvspho/19%20-%20Despair.mp3',
     name: 'Naruto Shippuden OST - Despair',
     img:
       'https://www.desktopbackground.org/p/2013/05/29/583850_obito-uchiha-quotes-quotesgram_1024x530_h.jpg'
@@ -1299,7 +1528,7 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/iilxeefave/17-setting-sun.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/tndvantz/17%20-%20Setting%20Sun.mp3',
     name: 'Naruto Shippuden OST - Setting Sun',
     img:
       'http://images4.wikia.nocookie.net/__cb20091224151530/naruto/images/e/e6/Last_Smile.PNG'
@@ -1307,25 +1536,17 @@ export const osts = [
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/yraqufecuc/21-stalemate.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/mcydqpmy/21%20-%20Stalemate.mp3',
     name: 'Naruto Shippuden OST - Stalemate',
     img:
-      'http://chaspikserial.ru/uploads/posts/1files/152765-sage-naruto-hd-wallpapers.jpg'
+      'https://cdn.idntimes.com/content-images/post/20171003/da-6-4b6a9ff0b1cd4c10ec57a1dc8ae00a85.jpg'
   },
 
   {
     link:
-      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/huxtigyycv/22-tragic.mp3',
+      'http://66.90.93.122/ost/naruto-shippuden-original-soundtrack-1/awemuyob/22%20-%20Tragic.mp3',
     name: 'Naruto Shippuden OST - Tragic',
-    img:
-      'http://image.noelshack.com/fichiers/2017/07/1487083218-naruto-sasuke-looses-arms.jpg'
-  },
-
-  {
-    link:
-      'http://www.youtubeinmp3.com/fetch/?video=https://www.youtube.com/watch?v=IK1K9O3y-gk',
-    name: 'Dragon Ball Super ED - Far Away',
-    img: 'http://i.imgur.com/FMIKlge.jpg'
+    img: 'https://images.plurk.com/2iOMhBC4n3t7kFynsMJG.jpg'
   },
 
   {
@@ -1487,6 +1708,362 @@ export const osts = [
       'http://67.159.62.2/anime_ost/fairy-tail-original-soundtrack-vol-4/wjhlnkclrt/17%20-%20Ultear%20to%20Gray.mp3',
     name: 'Fairy Tail OST - Ultear to Gray',
     img: 'https://s25.postimg.org/6w9n8n11r/Drops_of_Time.png'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-1/fdrelxsesf/01-shio.mp3',
+    name: 'Clannad OST - Shio',
+    img:
+      'https://i.pinimg.com/originals/23/a4/22/23a422e7f602f09800a2caf92802e233.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-1/dzmzzccevq/02-illusions.mp3',
+    name: 'Clannad OST - Illusions',
+    img: 'https://pbs.twimg.com/media/DEOSDQjUwAAkUr3.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-1/gpumkomlzv/05-nagisa.mp3',
+    name: 'Clannad OST - Nagisa',
+    img: 'http://att.bbs.duowan.com/forum/201208/28/1301385om5t5slwdw5msho.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-1/szlqfqytmg/08-hurry-starfish.mp3',
+    name: 'Clannad OST - Hurry, Starfish',
+    img:
+      'https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3b7d0a20cf431adcabe073a4b36acaf2edd9840.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/clannad-original-soundtrack-disc-1/bonksbhnmj/13-meaningful-ways-to-pass-the-time.mp3',
+    name: 'Clannad OST - Meaningful Ways to Pass the Time',
+    img: 'https://i.ytimg.com/vi/EEXxDszslTo/maxresdefault.jpg'
+  },
+
+  {
+    link: 'https://my.mixtape.moe/swjtom.mp3',
+    name: 'Boku no Hero Academia S2 OST-2 Jet Set Run',
+    img: 'https://images6.alphacoders.com/820/820024.png'
+  },
+
+  {
+    link: 'https://s1.vocaroo.com/media/download_temp/Vocaroo_s1b0f75sq5EN.mp3',
+    name: 'Kimi no na wa OST - Yumetourou Radwimps',
+    img: 'https://i.imgur.com/GZ3Ojg2.jpg'
+  },
+
+  {
+    link: 'https://s1.vocaroo.com/media/download_temp/Vocaroo_s1oMIbR1BFgl.mp3',
+    name: 'Kimi no na wa OST - Zen zen zense Radwimps',
+    img: 'https://i.imgur.com/QIyA637.png'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/9sqnxnojdtrcjnm/Detective%20Conan%20Soundtrack%201.m4a?dl=0',
+    name: 'Detective Conan OST - Theme Song',
+    img:
+      'https://www.pixelstalk.net/wp-content/uploads/2016/10/Manga-Detective-Conan-Pictures.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/lnqmo3gx7y9glr8/One%20Piece%20Epic%20Battle%20Theme.m4a?dl=0',
+    name: 'One Piece OST - Epic Battle Theme',
+    img: 'https://i.imgur.com/7hdijZP.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/r8olgisqrm0j7p3/Death%20note.m4a?dl=0',
+    name: 'Death Note OST - Death Note',
+    img: 'https://i.ytimg.com/vi/fIeGTEQPAKE/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://66.90.93.122/ost/one-punch-man-original-soundtrack/lmdyjfkn/02%20THEME%20OF%20ONE%20PUNCH%20MAN-SEIGI%20SHIKKOU-.mp3',
+    name: 'One Punch Man OST - Seigi Shikkou',
+    img:
+      'https://initiate.alphacoders.com/download/wallpaper/654247/images3/jpg/1422319762'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/zcukgvseyu/02%20-%20The%20World%20of%20Adventurers%20~%20Kanzenban.mp3',
+    name: 'Hunter x Hunter 2011 OST - The World of Adventurers ~ Kanzenban',
+    img: 'https://i.ytimg.com/vi/rVkpAyvDr5c/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/wpssdidbjc/03%20-%20Ginpatsu%20no%20Shounen.mp3',
+    name: 'Hunter x Hunter 2011 OST - Ginpatsu no Shounen',
+    img: 'http://jonvilma.com/images/hunter-x-hunter-3.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/qpufobsqgc/04%20-%20Hiiro%20no%20Hitomi%20no%20Aika.mp3',
+    name: 'Hunter x Hunter 2011 OST - Hiiro no Hitomi no Aika',
+    img: 'http://i.imgur.com/8sMDDzX.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/ejqifsulqf/05%20-%20All%20I%20Need%20Is%20MONEY%21.mp3',
+    name: 'Hunter x Hunter 2011 OST - All I Need Is MONEY!',
+    img: 'https://i.ytimg.com/vi/8eepXE410Yw/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/hedzslksgi/07%20-%20Shounen%20no%20Asa%20no%20Uta.mp3',
+    name: 'Hunter x Hunter 2011 OST - Shounen no Asa no Uta',
+    img: 'https://s1.postimg.org/67hqgn6skv/image.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/ocktubxvve/08%20-%20Koukai.mp3',
+    name: 'Hunter x Hunter 2011 OST - Koukai',
+    img: 'https://i.ytimg.com/vi/azIk3Fzpdmk/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/flzwjyyndy/11%20-%20Kijutsu%20Shi%20no%20Baire.mp3',
+    name: 'Hunter x Hunter 2011 OST - Kijutsu Shi no Baire',
+    img: 'https://s1.postimg.org/1zs1z5nka7/image.png'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/fxmrxectut/12%20-%20Mosa%20Domo%20no%20Heigei.mp3',
+    name: 'Hunter x Hunter 2011 OST - Mosa Domo no Heigei',
+    img: 'https://archive-media-0.nyafuu.org/w/image/1421/12/1421121591707.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/iglwchvujp/13%20-%20Ikkiuchi%21.mp3',
+    name: 'Hunter x Hunter 2011 OST - Ikkiuchi!',
+    img: 'https://s1.postimg.org/5uck585l27/Anime_X_708009.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/mwboiphbip/14%20-%20Boys%2C%20Be%20Courageous%21.mp3',
+    name: 'Hunter x Hunter 2011 OST - Boys, Be Courageous!',
+    img:
+      'https://lh6.googleusercontent.com/-kmu9npdWH70/VBhmwe-stGI/AAAAAAAAaCA/8E_b_2hZaw8/w1280-h720/screenshot-0006.jpg'
+  },
+
+  {
+    link:
+      'http://67.159.62.2/anime_ost/hunter-x-hunter-2011-original-soundtrack/fwrwchlsmm/32%20-%20Ginpatsu%20no%20Lullaby.mp3',
+    name: 'Hunter x Hunter 2011 OST - Ginpatsu no Lullaby',
+    img: 'https://s1.postimg.org/27ksmxffwv/image.png'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/oc3aems3hpc4uy3/Parasyte%20the%20Maxim%20OST%20-%20Next%20to%20You.mp3?dl=0',
+    name: 'Parasyte the Maxim OST - Next to You',
+    img: 'https://i.ytimg.com/vi/MHQn3l4mS3M/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/mrw567lse6cl3r9/1-01%20Made%20in%20Abyss.m4a.m4a?dl=0',
+    name: 'Made in Abyss OST - Made in Abyss',
+    img:
+      'https://blog.sakugabooru.com/wp-content/uploads/2017/07/abysshosoi1.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/tw55qtqptktday6/1-23%20Hanezeve%20Caradhina%20%28ft.Takeshi%20Saito%29.m4a.m4a?dl=0',
+    name: 'Made in Abyss OST - Hanezeve Caradhina',
+    img: 'https://images7.alphacoders.com/860/860635.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/7j9yq19rul50d8w/2-04%20Orth%20Waltz.m4a.m4a?dl=0',
+    name: 'Made in Abyss OST - Orth Waltz',
+    img:
+      'http://randomc.net/image/Made%20in%20Abyss/Made%20in%20Abyss%20-%2010%20-%20Large%2015.jpg'
+  },
+
+  {
+    link:
+      'https://www.dl.dropboxusercontent.com/s/3fzaaeoz4fazlny/2-17%20Reg%27s%20Power.m4a.m4a?dl=0',
+    name: "Made in Abyss OST - Reg's Power",
+    img: 'https://manga.tokyo/wp-content/uploads/2017/08/ABYSS05_0040.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/4mkmczh5ibh27ph/01%20-%20swordland.mp3?dl=1',
+    name: 'Sword Art Online OST - Swordland',
+    img: 'https://s18.postimg.org/61uunryt5/art-yuuki-tatsuya-devushki-2210.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/awaclli6kkuio7p/03%20-%20everyday%20life.mp3?dl=1',
+    name: 'Sword Art Online OST - Everyday Life',
+    img: 'https://s18.postimg.org/jirt6v6mh/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/ewgfotr6z1s6j9m/03%20-%20sorrowfully.mp3?dl=1',
+    name: 'Sword Art Online OST - Sorrowfully',
+    img: 'https://s18.postimg.org/7evds5rbt/Sword_Art_Online_-_03_7.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/6vnooruxvjqxtx9/04%20-%20critical%20phase.mp3?dl=1',
+    name: 'Sword Art Online OST - Critical Phase',
+    img: 'https://s18.postimg.org/u3kkrxj21/d0047863_50434c9e3644f.jpg'
+  },
+
+  {
+    link: 'https://www.dropbox.com/s/ixhsm4dm3k5rktc/05%20-%20victory.mp3?dl=1',
+    name: 'Sword Art Online OST - Victory',
+    img: 'https://s18.postimg.org/dtz02oibd/sequence-01-still002.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/jj4373gcahh9ww1/06%20-%20a%20new%20world%20of%20fairies.mp3?dl=1',
+    name: 'Sword Art Online OST - A New World Of Fairies',
+    img: 'https://s18.postimg.org/t3yv9rixl/swordart17flying.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/8fz57tm5pw61qzm/08%20-%20survive%20the%20swordland.mp3?dl=1',
+    name: 'Sword Art Online OST - Survive The Swordland',
+    img: 'https://s18.postimg.org/lp9jhbrw9/Sword_Art_Online_-_14_1.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/7q943ooao94um3m/10%20-%20fight%20with%20a%20devil.mp3?dl=1',
+    name: 'Sword Art Online OST - Fight With A Devil',
+    img:
+      'https://s18.postimg.org/kzqr56h4p/Sword_Art_Online_-_25_-_Large_07.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/xyyehxi23iub3i1/13%20-%20march%20down.mp3?dl=1',
+    name: 'Sword Art Online OST - March Down',
+    img:
+      'https://s18.postimg.org/wq4omex0p/kirito_asuna_yui_sword_art_online_by_kiritoalo-d9m606f.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/rwzi6xpk1w8u6nb/14%20-%20town%20in%20the%20morning.mp3?dl=1',
+    name: 'Sword Art Online OST - Town In The Morning',
+    img: 'https://s18.postimg.org/9py1a11qx/SAO_environment.png'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/039js875veik2je/15%20-%20climbing%20up%20the%20world%20tree.mp3?dl=1',
+    name: 'Sword Art Online OST - Climbing Up The World Tree',
+    img: 'https://s18.postimg.org/ck16nwbrd/Worldtree.png'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/2ck0dt2z4hiu7ni/19%20-%20luminous%20sword.mp3?dl=1',
+    name: 'Sword Art Online OST - Luminous Sword',
+    img: 'https://s18.postimg.org/ayv3n33ax/maxresdefault.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/ykqqgp5wr1g2862/21%20-%20got%20to%20win.mp3?dl=1',
+    name: 'Sword Art Online OST - Got To Win',
+    img: 'https://s18.postimg.org/ng6cofb49/maxresdefault_1.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/iu05ddrf7wy78dw/22%20-%20a%20tender%20feeling.mp3?dl=1',
+    name: 'Sword Art Online OST - A Tender Feeling',
+    img: 'https://s18.postimg.org/xerbaphx5/maxresdefault_2.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/myn0i6r8vhdc4m3/22%20-%20aerial%20fight.mp3?dl=1',
+    name: 'Sword Art Online OST - Aerial Fight',
+    img: 'https://s18.postimg.org/t6wj1po4p/Sword_20_1.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/si4vgfeujjch4jd/23%20-%20a%20narrow%20escape.mp3?dl=1',
+    name: 'Sword Art Online OST - A Narrow Escape',
+    img:
+      'https://s18.postimg.org/6w8o1wym1/minotaure-sword-online-kirigaya-kazuto-gleam-eyes-1920x1080-wall.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/egguut4mrs5m2xn/25%20-%20fight%21.mp3?dl=1',
+    name: 'Sword Art Online OST - Fight',
+    img: 'https://s18.postimg.org/bkonxaqfd/sword-art-online-08-10.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/hmssnlj60ojpdnd/26%20-%20dance%20with%20me.mp3?dl=1',
+    name: 'Sword Art Online OST - Dance With Me',
+    img: 'https://s18.postimg.org/r65zhdzuh/Leefa-and-_Kirito-_Dance.jpg'
+  },
+
+  {
+    link: 'https://www.dropbox.com/s/2jz0nxn90ownqm1/27%20-%20aincrad.mp3?dl=1',
+    name: 'Sword Art Online OST - Aincrad',
+    img: 'https://s18.postimg.org/q55qrq8ex/Floating_Temple.png'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/i4q93655fx1z25s/27%20-%20smile%20for%20me.mp3?dl=1',
+    name: 'Sword Art Online OST - Smile For Me',
+    img: 'https://s18.postimg.org/88qd42yp5/maxresdefault_3.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/pfvvkzxx6p1btv2/30%20-%20with%20my%20friend.mp3?dl=1',
+    name: 'Sword Art Online OST - With My Friend',
+    img: 'https://s18.postimg.org/ynf6whuhl/Sword_09_13.jpg'
+  },
+
+  {
+    link:
+      'https://www.dropbox.com/s/t3gl5c4ybm3inx6/32%20-%20at%20nightfall.mp3?dl=1',
+    name: 'Sword Art Online OST - At Nightfall',
+    img:
+      'https://s18.postimg.org/cpiq29s7d/kirito-sword-art-online-anime-hd-wallpaper-1920x1080-26161.jpg'
   }
 ]
 

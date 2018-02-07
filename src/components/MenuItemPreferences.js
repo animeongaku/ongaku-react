@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import ExpandToggle from './components/ExpandToggle'
-import './MenuItem.css'
+import ExpandToggle from './ExpandToggle'
+import '../css/MenuItem.css'
+import { MdSettings } from 'react-icons/lib/md'
+import { iconSize } from '../constants'
 
 export default class MenuItemPreferences extends Component {
   render() {
@@ -8,15 +10,8 @@ export default class MenuItemPreferences extends Component {
     return (
       <ExpandToggle>
         {(state, props) => (
-          <div className="menuItem">
-            <button
-              className="btn"
-              type="button"
-              style={{ backgroundImage: 'url(img/options.jpg)' }}
-              onClick={props.toggle}
-            >
-              <span className="screenReader">Preferences</span>
-            </button>
+          <button className="btn" title="Preferences" onClick={props.toggle}>
+            <MdSettings className="icons" size={iconSize} />
             <div
               className="menuDropdown padded"
               style={{ display: state.expanded ? '' : 'none' }}
@@ -24,9 +19,9 @@ export default class MenuItemPreferences extends Component {
               <div className="opening">
                 <div>Opening</div>
                 <div
-                  className={`toggle-btn ${preferenceState.opening
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.opening ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
@@ -41,9 +36,9 @@ export default class MenuItemPreferences extends Component {
               <div className="ending">
                 <div>Ending</div>
                 <div
-                  className={`toggle-btn ${preferenceState.ending
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.ending ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
@@ -58,9 +53,9 @@ export default class MenuItemPreferences extends Component {
               <div className="ost">
                 <div>OST</div>
                 <div
-                  className={`toggle-btn ${preferenceState.ost
-                    ? 'active'
-                    : ''}`}
+                  className={`toggle-btn ${
+                    preferenceState.ost ? 'active' : ''
+                  }`}
                 >
                   <input
                     type="checkbox"
@@ -95,7 +90,7 @@ export default class MenuItemPreferences extends Component {
                 </a>
               </div>
             </div>
-          </div>
+          </button>
         )}
       </ExpandToggle>
     )

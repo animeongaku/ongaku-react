@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import ExpandToggle from './components/ExpandToggle'
-import './MenuItem.css'
+import ExpandToggle from './ExpandToggle'
+import '../css/MenuItem.css'
+import { MdInfoOutline } from 'react-icons/lib/md'
+import { iconSize } from '../constants'
 
 export default class MenuItemInfo extends Component {
   render() {
@@ -10,14 +12,12 @@ export default class MenuItemInfo extends Component {
           <div className="menuItem">
             <button
               className="btn"
-              type="button"
-              style={{ backgroundImage: 'url(img/info.png)' }}
               onMouseEnter={props.toggle}
               onMouseLeave={props.toggle}
               onFocus={props.toggle}
               onBlur={props.toggle}
             >
-              <span className="screenReader">Information</span>
+              <MdInfoOutline className="icons" size={iconSize} />
             </button>
             <div
               className="menuDropdown"
