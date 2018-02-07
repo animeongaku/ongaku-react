@@ -19,14 +19,12 @@ body {
 /* CSS for icons used in the page */
 .icons {
   color: #fff;
-  padding: 0 15px;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
   transition: all 0.2s;
 }
 
 .icons:hover {
-  transform: scale(1.2);
   transition: all 0.2s;
   color: #bbb;
 }
@@ -253,17 +251,16 @@ th {
 }
 
 .btn {
-  border: none;
+  border: 2px solid #fff;
   background-color: transparent;
   background-size: contain;
-  height: 48px;
   margin: 3px 5px;
+  padding: 0;
   transition: transform 0.2s;
-  width: 48px;
 }
 .btn:hover,
 .btn:focus {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 .table {
   border: none;
