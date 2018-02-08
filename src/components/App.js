@@ -6,7 +6,7 @@ import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 import Player from './Player'
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/lib/ti'
-import { FaRefresh, FaExpand } from 'react-icons/lib/fa'
+import { FaRefresh, FaExpand, FaStar } from 'react-icons/lib/fa'
 
 const initialData = shuffle([...openings, ...endings, ...osts])
 
@@ -24,7 +24,8 @@ class App extends Component {
     preference: {
       opening: true,
       ending: true,
-      ost: true
+      ost: true,
+      favourites: false
     }
   }
   togglePlay = () => {
@@ -153,15 +154,19 @@ class App extends Component {
   togglePreference = e => {
     const { name } = e.target
     let { preference } = this.state
+    let data
     preference[name] = !preference[name]
     if (this.allFalse(preference)) {
       preference[name] = true
     }
-    const data = shuffle([
+    data = shuffle([
       ...(preference.opening ? openings : []),
       ...(preference.ending ? endings : []),
       ...(preference.ost ? osts : [])
     ])
+    if (preference.favourites) {
+      data = this.filterFavourites(data)
+    }
     this.setState({ preference, data })
   }
   showTempTrackDisplay = tempDisplayStr => {
@@ -199,6 +204,20 @@ class App extends Component {
   handleTrackScrub = e => {
     this.audio.currentTime = e.target.value / 100 * this.audio.duration
   }
+  isFavourite = (songName = this.state.trackName) => {
+    return localStorage.getItem(songName)
+  }
+  toggleFavourite = () => {
+    this.isFavourite()
+      ? localStorage.removeItem(this.state.trackName)
+      : localStorage.setItem(this.state.trackName, true)
+  }
+  filterFavourites = songList => {
+    return songList.filter(song => {
+      return this.isFavourite(song.name)
+    })
+  }
+
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }
@@ -233,7 +252,13 @@ class App extends Component {
             handleTrackScrub={this.handleTrackScrub}
             percentBuffered={this.state.percentBuffered}
           />
-          <i className="fa fa-2x fa-star" title="Favorite" />
+          <button
+            onClick={this.toggleFavourite}
+            title="Toggle Favourite"
+            className="btn"
+          >
+            <FaStar size={iconSize} className="icons" />
+          </button>
           <MenuItemInfo />
           <MenuItemPreferences
             togglePreferenceState={this.togglePreference}
