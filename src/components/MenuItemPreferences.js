@@ -67,6 +67,24 @@ export default class MenuItemPreferences extends Component {
                   <span className="round-btn" />
                 </div>
               </div>
+              <div className="favourites">
+                <div>Favourites</div>
+                <div
+                  className={`toggle-btn ${
+                    preferenceState.favourites ? 'active' : ''
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    className="cb-value cb-ost"
+                    name="favourites"
+                    checked={preferenceState.favourites}
+                    onChange={togglePreferenceState}
+                  />
+                  <span className="round-btn" />
+                </div>
+              </div>
+
               <div className="github-container">
                 <a
                   className="github-button"
