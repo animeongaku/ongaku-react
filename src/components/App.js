@@ -79,7 +79,7 @@ class App extends Component {
     this.audio.currentTime = Math.max(0, this.audio.currentTime - 10) || 0
     this.showTempTrackDisplay(
       <span className="icon iconRewind">
-        {this.formatCurrentmTime(parseInt(this.audio.currentTime, 10))}
+        {this.formatCurrentTime(parseInt(this.audio.currentTime, 10))}
       </span>
     )
   }
