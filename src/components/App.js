@@ -220,8 +220,17 @@ class App extends Component {
     })
   }
 
+  handleAppClicks = e => {
+    if (e.target.className === 'App' && this.state.showPlaylist) {
+      this.toggleDisplayPlaylist()
+    } else if (e.target.className === 'App') {
+      this.togglePlay()
+    } else return
+  }
+
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
+    document.addEventListener('click', this.handleAppClicks)
   }
   componentWillUnmount() {
     document.removeEventListener('keyup', this.handleKeyboardEvents)
