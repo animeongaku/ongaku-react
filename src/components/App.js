@@ -264,28 +264,30 @@ class App extends Component {
             handleTrackScrub={this.handleTrackScrub}
             percentBuffered={this.state.percentBuffered}
           />
-          <div className="top-left">
-            <button
-              onClick={this.toggleDisplayPlaylist}
-              title="Playlist"
-              className="btn"
-            >
-              <FaBars size={iconSize} className="icons" />
-            </button>
-          </div>
-          <div className="top-right">
-            <button
-              onClick={this.toggleFavourite}
-              title="Toggle Favourite"
-              className="btn"
-            >
-              <FaStar size={iconSize} className="icons" />
-            </button>
-            <MenuItemInfo />
-            <MenuItemPreferences
-              togglePreferenceState={this.togglePreference}
-              preferenceState={this.state.preference}
-            />
+          <div className="top-buttons">
+            <div className="top-left">
+              <button
+                onClick={this.toggleDisplayPlaylist}
+                title="Playlist"
+                className="btn"
+              >
+                <FaBars size={iconSize} className="icons" />
+              </button>
+            </div>
+            <div className="top-right">
+              <button
+                onClick={this.toggleFavourite}
+                title="Toggle Favourite"
+                className="btn"
+              >
+                <FaStar size={iconSize} className="icons" />
+              </button>
+              <MenuItemInfo />
+              <MenuItemPreferences
+                togglePreferenceState={this.togglePreference}
+                preferenceState={this.state.preference}
+              />
+            </div>
           </div>
         </div>
 

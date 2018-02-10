@@ -82,14 +82,12 @@ th {
   flex-direction: column;
 }
 
-.top-left {
-  align-self: flex-start;
+.top-buttons {
   display: flex;
-  position: absolute;
+  justify-content: space-between;
 }
 
 .top-right {
-  align-self: flex-end;
   display: flex;
 }
 
