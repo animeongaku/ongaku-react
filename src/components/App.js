@@ -14,7 +14,6 @@ const initialData = shuffle([...openings, ...endings, ...osts])
 class App extends Component {
   state = {
     data: initialData,
-    currentTrackIndex: 0,
     trackName: initialData[0].name,
     src: initialData[0].link,
     bgImg: initialData[0].img,
@@ -52,23 +51,18 @@ class App extends Component {
     this.setState({ isFullscreen: !isFullscreen })
   }
   nextTrack = () => {
-    const currentTrackIndex =
-      ++this.state.currentTrackIndex % this.state.data.length
-    const track = this.state.data[currentTrackIndex]
-    console.log(track)
+    this.state.data.push(this.state.data.shift())
+    const track = this.state.data[0]
     this.setState({
-      currentTrackIndex,
       src: track.link,
       bgImg: track.img,
       trackName: track.name
     })
   }
   previousTrack = () => {
-    const currentTrackIndex =
-      --this.state.currentTrackIndex % this.state.data.length
-    const track = this.state.data[currentTrackIndex]
+    this.state.data.unshift(this.state.data.pop())
+    const track = this.state.data[0]
     this.setState({
-      currentTrackIndex,
       src: track.link,
       bgImg: track.img,
       trackName: track.name
@@ -176,7 +170,7 @@ class App extends Component {
       clearTimeout(this.trackDisplayQueue)
       this.trackDisplayQueue = setTimeout(() => {
         this.setState({
-          trackName: this.state.data[this.state.currentTrackIndex].name
+          trackName: this.state.data[0].name
         })
       }, 1000)
     })
