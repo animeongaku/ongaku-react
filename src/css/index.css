@@ -164,6 +164,10 @@ th {
   position: sticky;
 }
 
+.song-search {
+  width: 100vw;
+}
+
 .track-list::-webkit-scrollbar {
   background-color: transparent;
   width: 10px;
@@ -205,7 +209,7 @@ th {
 
 .close-track-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .close-track-list button {

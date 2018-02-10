@@ -12,19 +12,15 @@ class Playlist extends Component {
       >
         <div className="close-track-list">
           <button
+            className="btn"
             onClick={this.props.toggleDisplayPlaylist}
             title="Close Playlist"
           >
-            <FaClose size={iconSize} />
+            <FaClose size={iconSize} className="icons" />
           </button>
         </div>
         <div className="sticky-bar">
-          <input
-            type="text"
-            name="song_search"
-            id="song_search"
-            className="song-search"
-          />
+          <input type="text" name="song_search" className="song-search" />
         </div>
         <ul>
           {this.props.data.map(songObj => {
