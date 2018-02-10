@@ -154,7 +154,7 @@ th {
   color: #eee;
   z-index: 1;
   position: absolute;
-  overflow: auto;
+  overflow-x: hidden;
   transform: translateX(-200px);
   transition: transform 0.5s ease;
 }
