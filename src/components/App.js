@@ -20,6 +20,7 @@ class App extends Component {
     bgImg: initialData[0].img,
     isFullscreen: false,
     isPlaying: false,
+    showPlaylist: false,
     percentComplete: 0,
     percentBuffered: 0,
     preference: {
@@ -220,10 +221,9 @@ class App extends Component {
   }
 
   toggleDisplayPlaylist = () => {
-    const playList = document.querySelector('.track-list')
-    playList.classList.contains('open-track-list')
-      ? playList.classList.remove('open-track-list')
-      : playList.classList.add('open-track-list')
+    this.setState({
+      showPlaylist: !this.state.showPlaylist
+    })
   }
 
   componentDidMount() {
@@ -257,6 +257,7 @@ class App extends Component {
         <Playlist
           data={this.state.data}
           toggleDisplayPlaylist={this.toggleDisplayPlaylist}
+          showPlaylist={this.state.showPlaylist}
         />
         <div className="top-bar">
           <Player

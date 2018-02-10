@@ -5,7 +5,11 @@ import { iconSize } from '../constants'
 class Playlist extends Component {
   render() {
     return (
-      <div className="track-list">
+      <div
+        className={`track-list ${
+          this.props.showPlaylist ? 'open-track-list' : ''
+        }`}
+      >
         <div className="close-track-list">
           <button
             onClick={this.props.toggleDisplayPlaylist}
