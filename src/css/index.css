@@ -87,13 +87,7 @@ th {
   justify-content: space-between;
 }
 
-.top-left {
-  align-self: flex-start;
-  display: flex;
-}
-
 .top-right {
-  align-self: flex-end;
   display: flex;
 }
 
