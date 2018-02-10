@@ -5,8 +5,9 @@ import { keys, iconSize } from '../constants'
 import MenuItemInfo from './MenuItemInfo'
 import MenuItemPreferences from './MenuItemPreferences'
 import Player from './Player'
+import Playlist from './Playlist'
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/lib/ti'
-import { FaRefresh, FaExpand, FaStar } from 'react-icons/lib/fa'
+import { FaRefresh, FaExpand, FaStar, FaBars } from 'react-icons/lib/fa'
 
 const initialData = shuffle([...openings, ...endings, ...osts])
 
@@ -218,6 +219,13 @@ class App extends Component {
     })
   }
 
+  toggleDisplayPlaylist = () => {
+    const playList = document.querySelector('.track-list')
+    playList.classList.contains('open-track-list')
+      ? playList.classList.remove('open-track-list')
+      : playList.classList.add('open-track-list')
+  }
+
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }
@@ -246,24 +254,39 @@ class App extends Component {
         />
 
         {/* Top-bar components */}
+        <Playlist
+          data={this.state.data}
+          toggleDisplayPlaylist={this.toggleDisplayPlaylist}
+        />
         <div className="top-bar">
           <Player
             percentComplete={this.state.percentComplete}
             handleTrackScrub={this.handleTrackScrub}
             percentBuffered={this.state.percentBuffered}
           />
-          <button
-            onClick={this.toggleFavourite}
-            title="Toggle Favourite"
-            className="btn"
-          >
-            <FaStar size={iconSize} className="icons" />
-          </button>
-          <MenuItemInfo />
-          <MenuItemPreferences
-            togglePreferenceState={this.togglePreference}
-            preferenceState={this.state.preference}
-          />
+          <div className="top-left">
+            <button
+              onClick={this.toggleDisplayPlaylist}
+              title="Playlist"
+              className="btn"
+            >
+              <FaBars size={iconSize} className="icons" />
+            </button>
+          </div>
+          <div className="top-right">
+            <button
+              onClick={this.toggleFavourite}
+              title="Toggle Favourite"
+              className="btn"
+            >
+              <FaStar size={iconSize} className="icons" />
+            </button>
+            <MenuItemInfo />
+            <MenuItemPreferences
+              togglePreferenceState={this.togglePreference}
+              preferenceState={this.state.preference}
+            />
+          </div>
         </div>
 
         <div className="display-track">

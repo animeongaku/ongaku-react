@@ -79,6 +79,18 @@ th {
   align-self: flex-start;
   width: 100vw;
   justify-content: flex-end;
+  flex-direction: column;
+}
+
+.top-left {
+  align-self: flex-start;
+  display: flex;
+  position: absolute;
+}
+
+.top-right {
+  align-self: flex-end;
+  display: flex;
 }
 
 .opening,
@@ -134,6 +146,75 @@ th {
 
 #player:hover #playTime {
   opacity: 1;
+}
+
+/*Playlist*/
+.track-list {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #eee;
+  z-index: 1;
+  position: absolute;
+  overflow: auto;
+  transform: translateX(-200px);
+  transition: transform 0.5s ease;
+}
+
+.sticky-bar {
+  top: 0px;
+  position: sticky;
+}
+
+.track-list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.track-list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.track-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 60px;
+}
+
+.track-list ul {
+  padding: 0;
+}
+
+.track-list ul li {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 10px;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.track-list ul li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.track-list-img {
+  margin-right: auto;
+}
+
+.open-track-list {
+  transform: translateX(0);
+}
+
+.close-track-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-track-list button {
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
 }
 
 /* Play/Pause Button */
