@@ -24,7 +24,14 @@ class Playlist extends Component {
         </div>
         <ul>
           {this.props.data.map(songObj => {
-            return <li key={songObj.name}>{songObj.name}</li>
+            return (
+              <li
+                key={songObj.name}
+                onClick={() => this.props.handleSongClick(songObj.name)}
+              >
+                {songObj.name}
+              </li>
+            )
           })}
         </ul>
       </div>
