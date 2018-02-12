@@ -228,6 +228,24 @@ class App extends Component {
     } else return
   }
 
+  handleSongClick = name => {
+    let data = this.state.data
+    data.some((obj, index) => {
+      if (obj.name === name) {
+        let removed_tracks = data.slice(0, index)
+        data.splice(0, removed_tracks.length)
+        data = data.concat(removed_tracks)
+        this.setState({
+          trackName: obj.name,
+          src: obj.link,
+          bgImg: obj.img,
+          data
+        })
+        return true
+      }
+    })
+  }
+
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyboardEvents)
     document.addEventListener('click', this.handleAppClicks)
@@ -261,6 +279,7 @@ class App extends Component {
           data={this.state.data}
           toggleDisplayPlaylist={this.toggleDisplayPlaylist}
           showPlaylist={this.state.showPlaylist}
+          handleSongClick={this.handleSongClick}
         />
         <div className="top-bar">
           <Player

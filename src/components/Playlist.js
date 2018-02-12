@@ -23,9 +23,14 @@ class Playlist extends Component {
           <input type="text" name="song_search" className="song-search" />
         </div>
         <ul>
-          {this.props.data.map(songObj => {
-            return <li key={songObj.name}>{songObj.name}</li>
-          })}
+          {this.props.data.map(songObj => (
+            <li
+              key={songObj.name}
+              onClick={() => this.props.handleSongClick(songObj.name)}
+            >
+              {songObj.name}
+            </li>
+          ))}
         </ul>
       </div>
     )
