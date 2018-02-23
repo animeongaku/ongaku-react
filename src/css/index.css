@@ -401,6 +401,7 @@ input[type='range'] {
   background: transparent;
   border-radius: 2em;
   width: 100%;
+  overflow: hidden;
 }
 input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
@@ -428,12 +429,13 @@ input[type='range']::-ms-track {
   border-width: 16px 0;
 }
 input[type='range']::-webkit-slider-thumb {
-  height: 1.5em;
-  width: 1.5em;
+  height: 0em;
+  width: 0em;
   border-radius: 50%;
   background: #000;
   cursor: pointer;
   -webkit-appearance: none;
+  box-shadow: -1000px 0 0 1000px red;
 }
 input[type='range']::-moz-range-thumb {
   height: 1.5em;
