@@ -399,9 +399,10 @@ th {
 input[type='range'] {
   -webkit-appearance: none;
   background: transparent;
-  border-radius: 2em;
   width: 100%;
   overflow: hidden;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
