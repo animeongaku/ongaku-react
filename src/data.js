@@ -2064,6 +2064,14 @@ export const osts = [
     name: 'Sword Art Online OST - At Nightfall',
     img:
       'https://s18.postimg.org/cpiq29s7d/kirito-sword-art-online-anime-hd-wallpaper-1920x1080-26161.jpg'
+  },
+  
+  {
+    link:
+      'https://www.dropbox.com/s/obccd111g0a4ho3/28%20-%20Samidare.mp3?dl=0',
+    name: 'Naruto OST - Samidare',
+    img:
+      'https://www.dropbox.com/s/c36rmzzdmkvpw54/jiraya_img.jfif?dl=0'
   }
 ]
 
