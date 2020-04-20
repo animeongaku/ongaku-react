@@ -46,7 +46,7 @@
 ## Ports [<img src="https://rawgit.com/sindresorhus/awesome-electron/master/electron-logo.svg" align="right" width="100">](https://electron.atom.io/)
 
 * Electron based desktop port is available in [ongaku-desktop](https://github.com/Anshuman-Verma/ongaku-desktop.git).
-* This repository was initially written solely using vanillajs [here](https://github.com/animeongaku/ongaku).
+* This repository was initially written solely using vanillajs [here](https://github.com/anshumanv/ongaku).
 
 
 
